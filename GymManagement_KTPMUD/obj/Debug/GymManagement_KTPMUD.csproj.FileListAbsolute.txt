@@ -1,0 +1,13 @@
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\bin\Debug\GymManagement_KTPMUD.exe.config
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\bin\Debug\GymManagement_KTPMUD.exe
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\bin\Debug\GymManagement_KTPMUD.pdb
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.csproj.AssemblyReference.cache
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.Form1.resources
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.Properties.Resources.resources
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.csproj.GenerateResource.cache
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.csproj.CoreCompileInputs.cache
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.exe
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.pdb
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdmin.resources
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.UCAdmin_Customers.resources
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.FormAddCustomers.resources

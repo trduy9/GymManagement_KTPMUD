@@ -1,0 +1,214 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardadmincontrols\\formaddcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardadmincontrols\\formaddcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardadmincontrols\\ucadmin_customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardadmincontrols\\ucadmin_customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|f:\\btl_ktpmud\\gymmanagement_ktpmud\\gymmanagement_ktpmud\\dashboardadmincontrols\\ucadmin_customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardadmincontrols\\ucadmin_customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\loginandregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\loginandregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardadmincontrols\\formaddcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardadmincontrols\\formaddcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\loginandregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\loginandregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardadmincontrols\\formaddcustomers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardadmincontrols\\formaddcustomers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginAndRegister.cs [Design]",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\LoginAndRegister.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\LoginAndRegister.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\LoginAndRegister.cs [Design]",
+              "RelativeToolTip": "GymManagement_KTPMUD\\LoginAndRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:27:46.253Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormAddCustomers.cs [Design]",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.cs [Design]",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T14:39:43.157Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginAndRegister.Designer.cs",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\LoginAndRegister.Designer.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\LoginAndRegister.Designer.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\LoginAndRegister.Designer.cs",
+              "RelativeToolTip": "GymManagement_KTPMUD\\LoginAndRegister.Designer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:27:28.513Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashboardAdmin.cs [Design]",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdmin.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdmin.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdmin.cs [Design]",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T16:18:59.872Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UCAdmin_Customers.cs",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Customers.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Customers.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Customers.cs",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Customers.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAEwIIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T09:55:54.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UCAdmin_Customers.cs [Design]",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Customers.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Customers.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Customers.cs [Design]",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Customers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T16:32:26.516Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DashboardAdmin.cs",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdmin.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdmin.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdmin.cs",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardAdmin.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAIwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T07:25:19.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormAddCustomers.Designer.cs",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.Designer.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.Designer.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.Designer.cs",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.Designer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T16:26:09.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormAddCustomers.cs",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.cs",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardAdminControls\\FormAddCustomers.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAYwIoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T14:55:41.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\Program.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\Program.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\Program.cs",
+              "RelativeToolTip": "GymManagement_KTPMUD\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:31:26.998Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
