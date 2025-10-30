@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_logout = new System.Windows.Forms.Button();
+            this.button_reports = new System.Windows.Forms.Button();
+            this.button_equipment = new System.Windows.Forms.Button();
+            this.button_payments = new System.Windows.Forms.Button();
             this.button_classes = new System.Windows.Forms.Button();
             this.button_employees = new System.Windows.Forms.Button();
             this.button_customers = new System.Windows.Forms.Button();
             this.button_home = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button_payments = new System.Windows.Forms.Button();
-            this.button_equipment = new System.Windows.Forms.Button();
-            this.button_reports = new System.Windows.Forms.Button();
-            this.button_logout = new System.Windows.Forms.Button();
             this.panelAdmin_UC = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +57,43 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(226, 764);
             this.panel1.TabIndex = 0;
+            // 
+            // button_logout
+            // 
+            this.button_logout.Location = new System.Drawing.Point(0, 672);
+            this.button_logout.Name = "button_logout";
+            this.button_logout.Size = new System.Drawing.Size(226, 35);
+            this.button_logout.TabIndex = 7;
+            this.button_logout.Text = "Log Out";
+            this.button_logout.UseVisualStyleBackColor = true;
+            this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
+            // 
+            // button_reports
+            // 
+            this.button_reports.Location = new System.Drawing.Point(0, 471);
+            this.button_reports.Name = "button_reports";
+            this.button_reports.Size = new System.Drawing.Size(226, 35);
+            this.button_reports.TabIndex = 6;
+            this.button_reports.Text = "Reports";
+            this.button_reports.UseVisualStyleBackColor = true;
+            // 
+            // button_equipment
+            // 
+            this.button_equipment.Location = new System.Drawing.Point(0, 404);
+            this.button_equipment.Name = "button_equipment";
+            this.button_equipment.Size = new System.Drawing.Size(226, 35);
+            this.button_equipment.TabIndex = 5;
+            this.button_equipment.Text = "Equipment";
+            this.button_equipment.UseVisualStyleBackColor = true;
+            // 
+            // button_payments
+            // 
+            this.button_payments.Location = new System.Drawing.Point(0, 342);
+            this.button_payments.Name = "button_payments";
+            this.button_payments.Size = new System.Drawing.Size(226, 35);
+            this.button_payments.TabIndex = 4;
+            this.button_payments.Text = "Payments";
+            this.button_payments.UseVisualStyleBackColor = true;
             // 
             // button_classes
             // 
@@ -112,49 +149,12 @@
             this.label2.Text = "WELCOME BACK TO LO GYM! IT\'S GYM TIMEEEEE!!!!";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button_payments
-            // 
-            this.button_payments.Location = new System.Drawing.Point(0, 342);
-            this.button_payments.Name = "button_payments";
-            this.button_payments.Size = new System.Drawing.Size(226, 35);
-            this.button_payments.TabIndex = 4;
-            this.button_payments.Text = "Payments";
-            this.button_payments.UseVisualStyleBackColor = true;
-            // 
-            // button_equipment
-            // 
-            this.button_equipment.Location = new System.Drawing.Point(0, 404);
-            this.button_equipment.Name = "button_equipment";
-            this.button_equipment.Size = new System.Drawing.Size(226, 35);
-            this.button_equipment.TabIndex = 5;
-            this.button_equipment.Text = "Equipment";
-            this.button_equipment.UseVisualStyleBackColor = true;
-            // 
-            // button_reports
-            // 
-            this.button_reports.Location = new System.Drawing.Point(0, 471);
-            this.button_reports.Name = "button_reports";
-            this.button_reports.Size = new System.Drawing.Size(226, 35);
-            this.button_reports.TabIndex = 6;
-            this.button_reports.Text = "Reports";
-            this.button_reports.UseVisualStyleBackColor = true;
-            // 
-            // button_logout
-            // 
-            this.button_logout.Location = new System.Drawing.Point(0, 672);
-            this.button_logout.Name = "button_logout";
-            this.button_logout.Size = new System.Drawing.Size(226, 35);
-            this.button_logout.TabIndex = 7;
-            this.button_logout.Text = "Log Out";
-            this.button_logout.UseVisualStyleBackColor = true;
-            this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
-            // 
             // panelAdmin_UC
             // 
             this.panelAdmin_UC.BackColor = System.Drawing.Color.White;
             this.panelAdmin_UC.Location = new System.Drawing.Point(232, 0);
             this.panelAdmin_UC.Name = "panelAdmin_UC";
-            this.panelAdmin_UC.Size = new System.Drawing.Size(1563, 756);
+            this.panelAdmin_UC.Size = new System.Drawing.Size(1563, 764);
             this.panelAdmin_UC.TabIndex = 8;
             this.panelAdmin_UC.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAdmin_UC_Paint);
             // 

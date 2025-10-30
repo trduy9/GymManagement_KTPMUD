@@ -87,7 +87,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
 
             if (string.IsNullOrEmpty(fullName) || string.IsNullOrEmpty(phone))
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin bắt buộc!");
+                MessageBox.Show("Please fill all necessary information!");
                 return;
             }
 
@@ -110,17 +110,17 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 int result = cmd.ExecuteNonQuery();
                 if (result > 0)
                 {
-                    MessageBox.Show("Thêm khách hàng thành công!");
+                    MessageBox.Show("Add customers successfully!");
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Không thể thêm khách hàng!");
+                    MessageBox.Show("Unable to add customers!");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi thêm khách hàng: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
             finally
             {
@@ -137,6 +137,11 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void text_signupMember_lastname_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

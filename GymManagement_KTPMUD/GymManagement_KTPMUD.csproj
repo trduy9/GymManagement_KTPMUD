@@ -62,11 +62,23 @@
     <Compile Include="DashboardAdminControls\FormAddCustomers.Designer.cs">
       <DependentUpon>FormAddCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashboardAdminControls\FormAddEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardAdminControls\FormAddEmployees.Designer.cs">
+      <DependentUpon>FormAddEmployees.cs</DependentUpon>
+    </Compile>
     <Compile Include="DashboardAdminControls\UCAdmin_Customers.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DashboardAdminControls\UCAdmin_Customers.Designer.cs">
       <DependentUpon>UCAdmin_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardAdminControls\UCAdmin_Employees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardAdminControls\UCAdmin_Employees.Designer.cs">
+      <DependentUpon>UCAdmin_Employees.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginAndRegister.cs">
       <SubType>Form</SubType>
@@ -82,8 +94,14 @@
     <EmbeddedResource Include="DashboardAdminControls\FormAddCustomers.resx">
       <DependentUpon>FormAddCustomers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DashboardAdminControls\FormAddEmployees.resx">
+      <DependentUpon>FormAddEmployees.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DashboardAdminControls\UCAdmin_Customers.resx">
       <DependentUpon>UCAdmin_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardAdminControls\UCAdmin_Employees.resx">
+      <DependentUpon>UCAdmin_Employees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginAndRegister.resx">
       <DependentUpon>LoginAndRegister.cs</DependentUpon>

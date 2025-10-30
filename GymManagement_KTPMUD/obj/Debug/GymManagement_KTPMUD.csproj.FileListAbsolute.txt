@@ -11,3 +11,5 @@ F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_
 F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdmin.resources
 F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.UCAdmin_Customers.resources
 F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.FormAddCustomers.resources
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.UCAdmin_Employees.resources
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.FormAddEmployees.resources

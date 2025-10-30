@@ -46,7 +46,7 @@ namespace GymManagement_KTPMUD
 
         private void button_employees_Click(object sender, EventArgs e)
         {
-
+            LoadUserControl(new DashboardAdminControls.UCAdmin_Employees());
         }
 
         private void button_classes_Click(object sender, EventArgs e)
