@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CustomControl;
 
 namespace GymManagement_KTPMUD.DashboardAdminControls
 {
@@ -17,19 +18,11 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
         public UCAdmin_Customers()
         {
             InitializeComponent();
-            dGV_Customers.ReadOnly = false;
+            LoadCustomers(); // gọi hàm hiển thị danh sách khách hàng
+            dGV_Customers.ReadOnly = true;
             dGV_Customers.AllowUserToAddRows = false;
             dGV_Customers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dGV_Customers.MultiSelect = false;
-
-            LoadCustomers(); // gọi hàm hiển thị danh sách khách hàng
-        }
-
-
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void search_button_Click(object sender, EventArgs e)
@@ -38,10 +31,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             LoadCustomers(keyword);
         }
 
-        private void txt_searchCustomers_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void LoadCustomers(string keyword = "")
         {
@@ -85,27 +74,53 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                         // Gán dữ liệu lên DataGridView
                         dGV_Customers.DataSource = dt;
 
-                        // Ẩn các cột không cần thiết (nếu muốn)
-                        if (dGV_Customers.Columns.Contains("MemberID"))
-                            dGV_Customers.Columns["MemberID"].Visible = false;
+                        // Tắt tự động co giãn
+                        dGV_Customers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
 
-                        // Căn chỉnh lại cột cho đẹp
-                        dGV_Customers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                        // Gán độ rộng cố định cho từng cột
+                        if (dGV_Customers.Columns.Contains("MemberID"))
+                            dGV_Customers.Columns["MemberID"].Width = 120;
+
+                        if (dGV_Customers.Columns.Contains("FullName"))
+                            dGV_Customers.Columns["FullName"].Width = 200;
+
+                        if (dGV_Customers.Columns.Contains("Gender"))
+                            dGV_Customers.Columns["Gender"].Width = 100;
+
+                        if (dGV_Customers.Columns.Contains("BirthDate"))
+                            dGV_Customers.Columns["BirthDate"].Width = 120;
+
+                        if (dGV_Customers.Columns.Contains("Phone"))
+                            dGV_Customers.Columns["Phone"].Width = 150;
+
+                        if (dGV_Customers.Columns.Contains("Email"))
+                            dGV_Customers.Columns["Email"].Width = 180;
+
+                        if (dGV_Customers.Columns.Contains("Address"))
+                            dGV_Customers.Columns["Address"].Width = 130;
+
+                        if (dGV_Customers.Columns.Contains("JoinDate"))
+                            dGV_Customers.Columns["JoinDate"].Width = 100;
+
+                        if (dGV_Customers.Columns.Contains("MembershipPlan"))
+                            dGV_Customers.Columns["MembershipPlan"].Width = 180;
+
+                        // Không cho người dùng resize cột
+                        foreach (DataGridViewColumn col in dGV_Customers.Columns)
+                        {
+                            col.Resizable = DataGridViewTriState.False;
+                        }
+
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("❌ Lỗi khi tải dữ liệu khách hàng: " + ex.Message,
-                                "Lỗi hệ thống",
+                MessageBox.Show("Error: " + ex.Message,
+                                "System Error",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
             }
-        }
-
-        private void dGV_Customers_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
 
@@ -174,81 +189,34 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
 
         private void button__Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-        "Do you want to save your edits?",
-        "Confirm Edit",
-        MessageBoxButtons.YesNo,
-        MessageBoxIcon.Question
-    );
-
-            if (result == DialogResult.Yes)
+            if (dGV_Customers.SelectedRows.Count == 0)
             {
-                try
-                {
-                    using (SqlConnection conn = new SqlConnection(connectionString))
-                    {
-                        conn.Open();
-
-                        foreach (DataGridViewRow row in dGV_Customers.Rows)
-                        {
-                            if (row.IsNewRow) continue;
-
-                            // Lấy dữ liệu từng cột (bạn có thể thêm hoặc sửa tùy cấu trúc DB)
-                            int memberId = Convert.ToInt32(row.Cells["MemberID"].Value);
-                            string fullName = row.Cells["FullName"].Value?.ToString() ?? "";
-                            string gender = row.Cells["Gender"].Value?.ToString() ?? "";
-                            string phone = row.Cells["Phone"].Value?.ToString() ?? "";
-                            string email = row.Cells["Email"].Value?.ToString() ?? "";
-                            string planName = row.Cells["MembershipPlan"].Value?.ToString() ?? "";
-                            DateTime joinDate = Convert.ToDateTime(row.Cells["JoinDate"].Value);
-
-                            // Cập nhật PlanID theo tên gói (nếu cần)
-                            string getPlanIdQuery = "SELECT PlanID FROM MembershipPlan WHERE PlanName = @PlanName";
-                            int planId = 0;
-                            using (SqlCommand getPlanCmd = new SqlCommand(getPlanIdQuery, conn))
-                            {
-                                getPlanCmd.Parameters.AddWithValue("@PlanName", planName);
-                                var planResult = getPlanCmd.ExecuteScalar();
-                                if (planResult != null)
-                                    planId = Convert.ToInt32(planResult);
-                            }
-
-                            // Câu lệnh update
-                            string updateQuery = @"
-                        UPDATE Member 
-                        SET FullName = @FullName, 
-                            Gender = @Gender, 
-                            Phone = @Phone, 
-                            Email = @Email, 
-                            PlanID = @PlanID, 
-                            JoinDate = @JoinDate
-                        WHERE MemberID = @MemberID";
-
-                            using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
-                            {
-                                cmd.Parameters.AddWithValue("@FullName", fullName);
-                                cmd.Parameters.AddWithValue("@Gender", gender);
-                                cmd.Parameters.AddWithValue("@Phone", phone);
-                                cmd.Parameters.AddWithValue("@Email", email);
-                                cmd.Parameters.AddWithValue("@PlanID", planId);
-                                cmd.Parameters.AddWithValue("@JoinDate", joinDate);
-                                cmd.Parameters.AddWithValue("@MemberID", memberId);
-                                cmd.ExecuteNonQuery();
-                            }
-                        }
-
-                        MessageBox.Show("Customer information updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadCustomers();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error updating data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                MessageBox.Show("Please select a customer first!");
+                return;
             }
+
+            int id = Convert.ToInt32(dGV_Customers.SelectedRows[0].Cells["MemberID"].Value);
+
+            FormEditCustomers f = new FormEditCustomers(id);
+            f.ShowDialog();
+
+            LoadCustomers(); // load lại danh sách sau khi edit
+        }
+
+        private void UCAdmin_Customers_Load(object sender, EventArgs e)
+        {
 
         }
 
+        private void dGV_Customers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txt_searchCustomers_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

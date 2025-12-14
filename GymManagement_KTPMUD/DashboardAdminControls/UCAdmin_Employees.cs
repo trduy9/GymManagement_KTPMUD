@@ -19,6 +19,10 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
 
             InitializeComponent();
             LoadEmployees();
+            dGV_Employees.ReadOnly = true;                // không cho chỉnh
+            dGV_Employees.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dGV_Employees.MultiSelect = false;            // chỉ chọn 1 dòng
+            dGV_Employees.AllowUserToAddRows = false;     // không cho thêm dòng trống
         }
 
         // 📘 Load danh sách huấn luyện viên
@@ -55,6 +59,55 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                     da.Fill(dt);
 
                     dGV_Employees.DataSource = dt;
+
+                    //dGV_Employees.Columns["TrainerID"].HeaderText = "Mã HLV";
+                    //dGV_Employees.Columns["FullName"].HeaderText = "Họ và tên";
+                    //dGV_Employees.Columns["Phone"].HeaderText = "Số điện thoại";
+                    //dGV_Employees.Columns["Email"].HeaderText = "Email";
+                    //dGV_Employees.Columns["Gender"].HeaderText = "Giới tính";
+                    //dGV_Employees.Columns["BirthDate"].HeaderText = "Ngày sinh";
+                    //dGV_Employees.Columns["JoinDate"].HeaderText = "Ngày vào làm";
+                    //dGV_Employees.Columns["Specialty"].HeaderText = "Chuyên môn";
+                    //dGV_Employees.Columns["ExperienceYears"].HeaderText = "Năm kinh nghiệm";
+
+
+                    // Tắt tự động co giãn
+                    dGV_Employees.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None
+                        ;
+
+                    // Gán độ rộng cố định cho từng cột
+                    if (dGV_Employees.Columns.Contains("TrainerID"))
+                        dGV_Employees.Columns["TrainerID"].Width = 120;
+
+                    if (dGV_Employees.Columns.Contains("FullName"))
+                        dGV_Employees.Columns["FullName"].Width = 200;
+
+                    if (dGV_Employees.Columns.Contains("Specialty"))
+                        dGV_Employees.Columns["Specialty"].Width = 120;
+
+                    if (dGV_Employees.Columns.Contains("ExperienceYears"))
+                        dGV_Employees.Columns["ExperienceYears"].Width = 180;
+
+                    if (dGV_Employees.Columns.Contains("Gender"))
+                        dGV_Employees.Columns["Gender"].Width = 100;
+
+                    if (dGV_Employees.Columns.Contains("Email"))
+                        dGV_Employees.Columns["Email"].Width = 180;
+
+                    if(dGV_Employees.Columns.Contains("Phone"))
+                        dGV_Employees.Columns["Phone"].Width = 160;
+
+                    if (dGV_Employees.Columns.Contains("BirthDate"))
+                        dGV_Employees.Columns["BirthDate"].Width = 100;
+
+                    if (dGV_Employees.Columns.Contains("JoinDate"))
+                        dGV_Employees.Columns["JoinDate"].Width = 100;
+
+                    // Không cho người dùng resize cột
+                    foreach (DataGridViewColumn col in dGV_Employees.Columns)
+                    {
+                        col.Resizable = DataGridViewTriState.False;
+                    }
                 }
             }
         }
@@ -127,96 +180,41 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error deleting customer: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error deleting trainer: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-        "Do you want to save your edits?",
-        "Confirm Edit",
-        MessageBoxButtons.YesNo,
-        MessageBoxIcon.Question
-    );
-
-            if (result == DialogResult.Yes)
+            if (dGV_Employees.SelectedRows.Count == 0)
             {
-                try
-                {
-                    {
-                        conn.Open();
-
-                        foreach (DataGridViewRow row in dGV_Employees.Rows)
-                        {
-                            if (row.IsNewRow) continue;
-
-                            int trainerId = Convert.ToInt32(row.Cells["TrainerID"].Value);
-                            string fullName = row.Cells["FullName"].Value?.ToString() ?? "";
-                            string phone = row.Cells["Phone"].Value?.ToString() ?? "";
-                            string email = row.Cells["Email"].Value?.ToString() ?? "";
-                            string gender = row.Cells["Gender"].Value?.ToString() ?? "";
-                            string specialty = row.Cells["Specialty"].Value?.ToString() ?? "";
-                            int expYears = 0;
-
-                            // Ép kiểu an toàn cho ExperienceYears
-                            if (row.Cells["ExperienceYears"].Value != null && int.TryParse(row.Cells["ExperienceYears"].Value.ToString(), out int val))
-                                expYears = val;
-
-                            // Ngày sinh và ngày tham gia
-                            DateTime birthDate = DateTime.Now;
-                            DateTime joinDate = DateTime.Now;
-
-                            if (DateTime.TryParse(row.Cells["BirthDate"].Value?.ToString(), out DateTime parsedBirth))
-                                birthDate = parsedBirth;
-                            if (DateTime.TryParse(row.Cells["JoinDate"].Value?.ToString(), out DateTime parsedJoin))
-                                joinDate = parsedJoin;
-
-                            string updateQuery = @"
-                        UPDATE Trainer 
-                        SET 
-                            FullName = @FullName,
-                            Phone = @Phone,
-                            Email = @Email,
-                            Gender = @Gender,
-                            BirthDate = @BirthDate,
-                            JoinDate = @JoinDate,
-                            Specialty = @Specialty,
-                            ExperienceYears = @ExperienceYears
-                        WHERE TrainerID = @TrainerID";
-
-                            using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
-                            {
-                                cmd.Parameters.AddWithValue("@FullName", fullName);
-                                cmd.Parameters.AddWithValue("@Phone", phone);
-                                cmd.Parameters.AddWithValue("@Email", email);
-                                cmd.Parameters.AddWithValue("@Gender", gender);
-                                cmd.Parameters.AddWithValue("@BirthDate", birthDate);
-                                cmd.Parameters.AddWithValue("@JoinDate", joinDate);
-                                cmd.Parameters.AddWithValue("@Specialty", specialty);
-                                cmd.Parameters.AddWithValue("@ExperienceYears", expYears);
-                                cmd.Parameters.AddWithValue("@TrainerID", trainerId);
-
-                                cmd.ExecuteNonQuery();
-                            }
-                        }
-
-                        MessageBox.Show("✅ Trainer information updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadEmployees(); // Cập nhật lại danh sách
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("❌ Error updating trainer data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                MessageBox.Show("Please select a trainer first!");
+                return;
             }
+
+            int id = Convert.ToInt32(dGV_Employees.SelectedRows[0].Cells["TrainerID"].Value);
+
+            FormEditEmployees f = new FormEditEmployees(id);
+            f.ShowDialog();
+
+            LoadEmployees(); // load lại danh sách sau khi edit
         }
 
         private void button_searchCustomers_Click(object sender, EventArgs e)
         {
             string keyword = textBox_searchEmployee.Text.Trim();
             LoadEmployees(keyword);
+
+        }
+
+        private void roundAnglePanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void UCAdmin_Employees_Load_1(object sender, EventArgs e)
+        {
 
         }
     }

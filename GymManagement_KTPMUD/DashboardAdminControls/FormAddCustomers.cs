@@ -53,7 +53,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi tải gói tập: " + ex.Message);
+                MessageBox.Show("Erors: " + ex.Message);
             }
             finally
             {

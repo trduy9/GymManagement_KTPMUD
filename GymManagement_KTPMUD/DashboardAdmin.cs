@@ -22,6 +22,7 @@ namespace GymManagement_KTPMUD
             uc.Dock = DockStyle.Fill;
             panelAdmin_UC.Controls.Clear();
             panelAdmin_UC.Controls.Add(uc);
+
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
@@ -51,7 +52,7 @@ namespace GymManagement_KTPMUD
 
         private void button_classes_Click(object sender, EventArgs e)
         {
-
+            LoadUserControl(new DashboardAdminControls.UCAdmin_Classes1());
         }
 
         private void button_logout_Click(object sender, EventArgs e)
@@ -79,9 +80,25 @@ namespace GymManagement_KTPMUD
             }
         }
 
-        private void panelAdmin_UC_Paint(object sender, PaintEventArgs e)
+        private void button_customers_Click_1(object sender, EventArgs e)
+        {
+            LoadUserControl(new DashboardAdminControls.UCAdmin_Customers());
+
+        }
+
+        private void panelAdmin_UC_Paint_2(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button_equipment_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new DashboardAdminControls.lbName());
+        }
+
+        private void button_payments_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new DashboardAdminControls.UCAdmin_Payment());
         }
     }
 }
