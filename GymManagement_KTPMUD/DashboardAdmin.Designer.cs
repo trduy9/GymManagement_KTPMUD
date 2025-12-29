@@ -75,7 +75,7 @@
             this.button_employees.Location = new System.Drawing.Point(0, -12);
             this.button_employees.Name = "button_employees";
             this.button_employees.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.button_employees.Size = new System.Drawing.Size(250, 88);
+            this.button_employees.Size = new System.Drawing.Size(226, 88);
             this.button_employees.TabIndex = 2;
             this.button_employees.Text = "                    EMPLOYEES";
             this.button_employees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -93,7 +93,7 @@
             this.button_classes.Location = new System.Drawing.Point(-3, -2);
             this.button_classes.Name = "button_classes";
             this.button_classes.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
-            this.button_classes.Size = new System.Drawing.Size(253, 78);
+            this.button_classes.Size = new System.Drawing.Size(229, 78);
             this.button_classes.TabIndex = 3;
             this.button_classes.Text = "                  CLASSES";
             this.button_classes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -111,7 +111,7 @@
             this.button_payments.Location = new System.Drawing.Point(-3, -11);
             this.button_payments.Name = "button_payments";
             this.button_payments.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button_payments.Size = new System.Drawing.Size(253, 96);
+            this.button_payments.Size = new System.Drawing.Size(229, 96);
             this.button_payments.TabIndex = 4;
             this.button_payments.Text = "                  PAYMENTS";
             this.button_payments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -129,9 +129,9 @@
             this.button_equipment.Location = new System.Drawing.Point(-3, -7);
             this.button_equipment.Name = "button_equipment";
             this.button_equipment.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_equipment.Size = new System.Drawing.Size(253, 86);
+            this.button_equipment.Size = new System.Drawing.Size(229, 86);
             this.button_equipment.TabIndex = 5;
-            this.button_equipment.Text = "   EQUIPMENT";
+            this.button_equipment.Text = "         EQUIPMENT";
             this.button_equipment.UseVisualStyleBackColor = false;
             this.button_equipment.Click += new System.EventHandler(this.button_equipment_Click);
             // 
@@ -145,11 +145,12 @@
             this.button_reports.Location = new System.Drawing.Point(-3, -9);
             this.button_reports.Name = "button_reports";
             this.button_reports.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.button_reports.Size = new System.Drawing.Size(253, 85);
+            this.button_reports.Size = new System.Drawing.Size(229, 85);
             this.button_reports.TabIndex = 6;
             this.button_reports.Text = "                  REPORTS";
             this.button_reports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_reports.UseVisualStyleBackColor = false;
+            this.button_reports.Click += new System.EventHandler(this.button_reports_Click);
             // 
             // button_logout
             // 
@@ -219,7 +220,7 @@
             this.button_home.Location = new System.Drawing.Point(-3, -11);
             this.button_home.Name = "button_home";
             this.button_home.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button_home.Size = new System.Drawing.Size(253, 88);
+            this.button_home.Size = new System.Drawing.Size(229, 88);
             this.button_home.TabIndex = 0;
             this.button_home.Text = "                 HOME";
             this.button_home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -247,7 +248,7 @@
             this.button_customers.Location = new System.Drawing.Point(-3, -8);
             this.button_customers.Name = "button_customers";
             this.button_customers.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button_customers.Size = new System.Drawing.Size(253, 88);
+            this.button_customers.Size = new System.Drawing.Size(229, 88);
             this.button_customers.TabIndex = 11;
             this.button_customers.Text = "                 CUSTOMERS";
             this.button_customers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -355,9 +356,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelAdmin_UC.BackColor = System.Drawing.Color.Transparent;
             this.panelAdmin_UC.ForeColor = System.Drawing.Color.Transparent;
-            this.panelAdmin_UC.Location = new System.Drawing.Point(241, 0);
+            this.panelAdmin_UC.Location = new System.Drawing.Point(222, 0);
             this.panelAdmin_UC.Name = "panelAdmin_UC";
-            this.panelAdmin_UC.Size = new System.Drawing.Size(1693, 1054);
+            this.panelAdmin_UC.Size = new System.Drawing.Size(1712, 1054);
             this.panelAdmin_UC.TabIndex = 0;
             this.panelAdmin_UC.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAdmin_UC_Paint_2);
             // 
@@ -365,7 +366,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.panelAdmin_UC);
             this.Controls.Add(this.flowLayoutPanel1);

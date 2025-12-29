@@ -67,6 +67,8 @@ namespace GymManagement_KTPMUD
             pictureBox_eyeRegister.Image = Properties.Resources.hide;
         }
 
+    
+
         private void Form1_Load(object sender, EventArgs e)
         {
             panel_register.Visible = false;

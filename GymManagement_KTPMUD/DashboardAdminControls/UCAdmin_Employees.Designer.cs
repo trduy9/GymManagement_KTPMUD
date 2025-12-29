@@ -58,7 +58,7 @@
             // 
             // textBox_searchEmployee
             // 
-            this.textBox_searchEmployee.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox_searchEmployee.BackColor = System.Drawing.Color.White;
             this.textBox_searchEmployee.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_searchEmployee.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_searchEmployee.Location = new System.Drawing.Point(938, 94);
@@ -111,7 +111,7 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(740, 85);
@@ -127,7 +127,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dGV_Employees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
-            this.dGV_Employees.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dGV_Employees.BackgroundColor = System.Drawing.Color.White;
             this.dGV_Employees.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dGV_Employees.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dGV_Employees.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -189,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);

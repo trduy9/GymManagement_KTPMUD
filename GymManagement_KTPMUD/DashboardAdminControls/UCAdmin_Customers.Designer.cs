@@ -30,11 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAdmin_Customers));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_searchCustomers = new System.Windows.Forms.Button();
-            this.txt_searchCustomers = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,14 +47,13 @@
             this.memberTableAdapter = new GymManagement_KTPMUD.GymManagementDBDataSet1TableAdapters.MemberTableAdapter();
             this.dGV_Customers = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_searchCustomers = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gymManagementDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAccountBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gymManagementDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGV_Customers)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_searchCustomers
@@ -63,23 +61,12 @@
             this.button_searchCustomers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_searchCustomers.BackgroundImage")));
             this.button_searchCustomers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button_searchCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_searchCustomers.Location = new System.Drawing.Point(1221, 88);
+            this.button_searchCustomers.Location = new System.Drawing.Point(1216, 94);
             this.button_searchCustomers.Name = "button_searchCustomers";
-            this.button_searchCustomers.Size = new System.Drawing.Size(38, 39);
+            this.button_searchCustomers.Size = new System.Drawing.Size(30, 27);
             this.button_searchCustomers.TabIndex = 0;
             this.button_searchCustomers.UseVisualStyleBackColor = true;
             this.button_searchCustomers.Click += new System.EventHandler(this.search_button_Click);
-            // 
-            // txt_searchCustomers
-            // 
-            this.txt_searchCustomers.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_searchCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_searchCustomers.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_searchCustomers.Location = new System.Drawing.Point(0, 9);
-            this.txt_searchCustomers.Name = "txt_searchCustomers";
-            this.txt_searchCustomers.Size = new System.Drawing.Size(270, 24);
-            this.txt_searchCustomers.TabIndex = 3;
-            this.txt_searchCustomers.TextChanged += new System.EventHandler(this.txt_searchCustomers_TextChanged);
             // 
             // button1
             // 
@@ -109,7 +96,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(740, 85);
@@ -183,37 +170,37 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dGV_Customers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
-            this.dGV_Customers.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dGV_Customers.BackgroundColor = System.Drawing.Color.White;
             this.dGV_Customers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dGV_Customers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dGV_Customers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dGV_Customers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dGV_Customers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dGV_Customers.ColumnHeadersHeight = 33;
             this.dGV_Customers.EnableHeadersVisualStyles = false;
             this.dGV_Customers.GridColor = System.Drawing.Color.Black;
-            this.dGV_Customers.Location = new System.Drawing.Point(-3, 3);
+            this.dGV_Customers.Location = new System.Drawing.Point(-3, 0);
             this.dGV_Customers.Name = "dGV_Customers";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dGV_Customers.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dGV_Customers.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dGV_Customers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            this.dGV_Customers.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dGV_Customers.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dGV_Customers.RowTemplate.Height = 24;
-            this.dGV_Customers.Size = new System.Drawing.Size(1755, 737);
+            this.dGV_Customers.Size = new System.Drawing.Size(1755, 740);
             this.dGV_Customers.TabIndex = 5;
             this.dGV_Customers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGV_Customers_CellContentClick);
             // 
@@ -226,21 +213,23 @@
             this.panel1.Size = new System.Drawing.Size(1752, 740);
             this.panel1.TabIndex = 10;
             // 
-            // panel2
+            // txt_searchCustomers
             // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.txt_searchCustomers);
-            this.panel2.Location = new System.Drawing.Point(950, 88);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(273, 39);
-            this.panel2.TabIndex = 11;
+            this.txt_searchCustomers.BackColor = System.Drawing.Color.White;
+            this.txt_searchCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_searchCustomers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_searchCustomers.Location = new System.Drawing.Point(938, 94);
+            this.txt_searchCustomers.Name = "txt_searchCustomers";
+            this.txt_searchCustomers.Size = new System.Drawing.Size(278, 27);
+            this.txt_searchCustomers.TabIndex = 3;
+            this.txt_searchCustomers.TextChanged += new System.EventHandler(this.txt_searchCustomers_TextChanged);
             // 
             // UCAdmin_Customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel2);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.txt_searchCustomers);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_);
@@ -257,8 +246,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGV_Customers)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,7 +254,6 @@
         #endregion
 
         private System.Windows.Forms.Button button_searchCustomers;
-        private System.Windows.Forms.TextBox txt_searchCustomers;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -281,6 +267,6 @@
         private GymManagementDBDataSet1TableAdapters.MemberTableAdapter memberTableAdapter;
         private System.Windows.Forms.DataGridView dGV_Customers;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txt_searchCustomers;
     }
 }

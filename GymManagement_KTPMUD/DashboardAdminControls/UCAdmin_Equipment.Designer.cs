@@ -64,7 +64,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvEquipment.AutoGenerateColumns = false;
             this.dgvEquipment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
-            this.dgvEquipment.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvEquipment.BackgroundColor = System.Drawing.Color.White;
             this.dgvEquipment.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvEquipment.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvEquipment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -258,6 +258,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.txtEquipmentID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtQuantity);

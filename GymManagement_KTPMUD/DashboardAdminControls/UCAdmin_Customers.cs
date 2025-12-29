@@ -79,7 +79,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
 
                         // Gán độ rộng cố định cho từng cột
                         if (dGV_Customers.Columns.Contains("MemberID"))
-                            dGV_Customers.Columns["MemberID"].Width = 120;
+                            dGV_Customers.Columns["MemberID"].Width = 115;
 
                         if (dGV_Customers.Columns.Contains("FullName"))
                             dGV_Customers.Columns["FullName"].Width = 200;

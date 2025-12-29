@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GymManagement_KTPMUD.DashboardAdminControls;
 
 namespace GymManagement_KTPMUD
 {
@@ -25,9 +26,13 @@ namespace GymManagement_KTPMUD
 
         }
 
+
+
+
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+            UCAdmin_Home home = new UCAdmin_Home();
+            LoadUserControl(home);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -37,7 +42,7 @@ namespace GymManagement_KTPMUD
 
         private void button_Dashboard_Click(object sender, EventArgs e)
         {
-
+            LoadUserControl(new DashboardAdminControls.UCAdmin_Home());
         }
 
         private void button_customers_Click(object sender, EventArgs e)
@@ -99,6 +104,11 @@ namespace GymManagement_KTPMUD
         private void button_payments_Click(object sender, EventArgs e)
         {
             LoadUserControl(new DashboardAdminControls.UCAdmin_Payment());
+        }
+
+        private void button_reports_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new DashboardAdminControls.UCAdmin_Reports());
         }
     }
 }

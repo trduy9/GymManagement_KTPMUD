@@ -53,3 +53,5 @@ F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_
 F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.FormEditClass.resources
 F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.lbName.resources
 F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.UCAdmin_Payment.resources
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.UCAdmin_Reports.resources
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardAdminControls.UCAdmin_Home.resources
