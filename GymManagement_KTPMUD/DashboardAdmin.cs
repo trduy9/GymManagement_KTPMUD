@@ -110,5 +110,10 @@ namespace GymManagement_KTPMUD
         {
             LoadUserControl(new DashboardAdminControls.UCAdmin_Reports());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new DashboardAdminControls.UCAdmin_Accounts());
+        }
     }
 }

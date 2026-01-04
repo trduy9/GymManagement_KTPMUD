@@ -171,7 +171,8 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                     PaymentID,
                     Amount,
                     PaymentDate,
-                    PaymentMethod
+                    PaymentMethod,
+                    Status 
                 FROM Payment
                 WHERE MemberID = @MemberID";
 
@@ -187,16 +188,16 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 dgvPayments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
 
                 if (dgvPayments.Columns.Contains("PaymentID"))
-                    dgvPayments.Columns["PaymentID"].Width = 125;
+                    dgvPayments.Columns["PaymentID"].Width = 110;
 
                 if (dgvPayments.Columns.Contains("Amount"))
-                    dgvPayments.Columns["Amount"].Width = 125;
+                    dgvPayments.Columns["Amount"].Width = 100;
 
                 if (dgvPayments.Columns.Contains("PaymentDate"))
-                    dgvPayments.Columns["PaymentDate"].Width = 180;
+                    dgvPayments.Columns["PaymentDate"].Width = 145;
 
                 if (dgvPayments.Columns.Contains("PaymentMethod"))
-                    dgvPayments.Columns["PaymentMethod"].Width = 180;
+                    dgvPayments.Columns["PaymentMethod"].Width = 155;
 
 
                 dgvPayments.ReadOnly = true;
@@ -225,27 +226,35 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
         {
             if (selectedMemberID == -1)
             {
-                MessageBox.Show("Vui lòng chọn khách hàng");
+                MessageBox.Show("Please select a member");
                 return;
             }
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = @"
-                INSERT INTO Payment
-                (MemberID, PlanID, Amount, PaymentDate, PaymentMethod)
-                VALUES
-                (@MemberID, @PlanID, @Amount, @PaymentDate, @PaymentMethod)";
+                conn.Open();
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                // 1️⃣ Insert Payment (Paid)
+                string insertPayment = @"
+        INSERT INTO Payment
+        (MemberID, PlanID, Amount, PaymentDate, PaymentMethod, Status)
+        VALUES
+        (@MemberID, @PlanID, @Amount, @PaymentDate, @PaymentMethod, 'Paid')";
+
+                SqlCommand cmd = new SqlCommand(insertPayment, conn);
                 cmd.Parameters.AddWithValue("@MemberID", selectedMemberID);
                 cmd.Parameters.AddWithValue("@PlanID", cbPlan.SelectedValue);
                 cmd.Parameters.AddWithValue("@Amount", decimal.Parse(txtAmount.Text));
                 cmd.Parameters.AddWithValue("@PaymentDate", dtpPaymentDate.Value);
                 cmd.Parameters.AddWithValue("@PaymentMethod", cbPaymentMethod.Text);
-
-                conn.Open();
                 cmd.ExecuteNonQuery();
+
+                // 2️⃣ Set Member → Active
+                SqlCommand updateMember = new SqlCommand(
+                    "UPDATE Member SET MemberStatus='Active' WHERE MemberID=@mid",
+                    conn);
+                updateMember.Parameters.AddWithValue("@mid", selectedMemberID);
+                updateMember.ExecuteNonQuery();
             }
 
             LoadPaymentsByMember(selectedMemberID);

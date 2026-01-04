@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardAdmin));
-            this.button_employees = new System.Windows.Forms.Button();
-            this.button_classes = new System.Windows.Forms.Button();
-            this.button_payments = new System.Windows.Forms.Button();
-            this.button_equipment = new System.Windows.Forms.Button();
-            this.button_reports = new System.Windows.Forms.Button();
-            this.button_logout = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -42,15 +36,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_customers = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button_employees = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button_classes = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button_equipment = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button_payments = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.button_reports = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.button_logout = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panelAdmin_UC = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
@@ -61,113 +62,9 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel12.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button_employees
-            // 
-            this.button_employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.button_employees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_employees.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_employees.ForeColor = System.Drawing.Color.White;
-            this.button_employees.Image = ((System.Drawing.Image)(resources.GetObject("button_employees.Image")));
-            this.button_employees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_employees.Location = new System.Drawing.Point(0, -12);
-            this.button_employees.Name = "button_employees";
-            this.button_employees.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.button_employees.Size = new System.Drawing.Size(226, 88);
-            this.button_employees.TabIndex = 2;
-            this.button_employees.Text = "                    EMPLOYEES";
-            this.button_employees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_employees.UseVisualStyleBackColor = false;
-            this.button_employees.Click += new System.EventHandler(this.button_employees_Click);
-            // 
-            // button_classes
-            // 
-            this.button_classes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.button_classes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_classes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_classes.ForeColor = System.Drawing.Color.White;
-            this.button_classes.Image = ((System.Drawing.Image)(resources.GetObject("button_classes.Image")));
-            this.button_classes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_classes.Location = new System.Drawing.Point(-3, -2);
-            this.button_classes.Name = "button_classes";
-            this.button_classes.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
-            this.button_classes.Size = new System.Drawing.Size(229, 78);
-            this.button_classes.TabIndex = 3;
-            this.button_classes.Text = "                  CLASSES";
-            this.button_classes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_classes.UseVisualStyleBackColor = false;
-            this.button_classes.Click += new System.EventHandler(this.button_classes_Click);
-            // 
-            // button_payments
-            // 
-            this.button_payments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.button_payments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_payments.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_payments.ForeColor = System.Drawing.Color.White;
-            this.button_payments.Image = ((System.Drawing.Image)(resources.GetObject("button_payments.Image")));
-            this.button_payments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_payments.Location = new System.Drawing.Point(-3, -11);
-            this.button_payments.Name = "button_payments";
-            this.button_payments.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button_payments.Size = new System.Drawing.Size(229, 96);
-            this.button_payments.TabIndex = 4;
-            this.button_payments.Text = "                  PAYMENTS";
-            this.button_payments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_payments.UseVisualStyleBackColor = false;
-            this.button_payments.Click += new System.EventHandler(this.button_payments_Click);
-            // 
-            // button_equipment
-            // 
-            this.button_equipment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.button_equipment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_equipment.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_equipment.ForeColor = System.Drawing.Color.White;
-            this.button_equipment.Image = ((System.Drawing.Image)(resources.GetObject("button_equipment.Image")));
-            this.button_equipment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_equipment.Location = new System.Drawing.Point(-3, -7);
-            this.button_equipment.Name = "button_equipment";
-            this.button_equipment.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_equipment.Size = new System.Drawing.Size(229, 86);
-            this.button_equipment.TabIndex = 5;
-            this.button_equipment.Text = "         EQUIPMENT";
-            this.button_equipment.UseVisualStyleBackColor = false;
-            this.button_equipment.Click += new System.EventHandler(this.button_equipment_Click);
-            // 
-            // button_reports
-            // 
-            this.button_reports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.button_reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_reports.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_reports.Image = ((System.Drawing.Image)(resources.GetObject("button_reports.Image")));
-            this.button_reports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_reports.Location = new System.Drawing.Point(-3, -9);
-            this.button_reports.Name = "button_reports";
-            this.button_reports.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.button_reports.Size = new System.Drawing.Size(229, 85);
-            this.button_reports.TabIndex = 6;
-            this.button_reports.Text = "                  REPORTS";
-            this.button_reports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_reports.UseVisualStyleBackColor = false;
-            this.button_reports.Click += new System.EventHandler(this.button_reports_Click);
-            // 
-            // button_logout
-            // 
-            this.button_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.button_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_logout.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_logout.Image = ((System.Drawing.Image)(resources.GetObject("button_logout.Image")));
-            this.button_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_logout.Location = new System.Drawing.Point(-3, -13);
-            this.button_logout.Name = "button_logout";
-            this.button_logout.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.button_logout.Size = new System.Drawing.Size(241, 100);
-            this.button_logout.TabIndex = 7;
-            this.button_logout.Text = "                 LOG OUT";
-            this.button_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_logout.UseVisualStyleBackColor = false;
-            this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
             // 
             // panel2
             // 
@@ -264,6 +161,24 @@
             this.panel4.Size = new System.Drawing.Size(241, 69);
             this.panel4.TabIndex = 12;
             // 
+            // button_employees
+            // 
+            this.button_employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.button_employees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_employees.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_employees.ForeColor = System.Drawing.Color.White;
+            this.button_employees.Image = ((System.Drawing.Image)(resources.GetObject("button_employees.Image")));
+            this.button_employees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_employees.Location = new System.Drawing.Point(0, -12);
+            this.button_employees.Name = "button_employees";
+            this.button_employees.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.button_employees.Size = new System.Drawing.Size(226, 88);
+            this.button_employees.TabIndex = 2;
+            this.button_employees.Text = "                    EMPLOYEES";
+            this.button_employees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_employees.UseVisualStyleBackColor = false;
+            this.button_employees.Click += new System.EventHandler(this.button_employees_Click);
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
@@ -272,6 +187,24 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(241, 69);
             this.panel5.TabIndex = 13;
+            // 
+            // button_classes
+            // 
+            this.button_classes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.button_classes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_classes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_classes.ForeColor = System.Drawing.Color.White;
+            this.button_classes.Image = ((System.Drawing.Image)(resources.GetObject("button_classes.Image")));
+            this.button_classes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_classes.Location = new System.Drawing.Point(-3, -2);
+            this.button_classes.Name = "button_classes";
+            this.button_classes.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
+            this.button_classes.Size = new System.Drawing.Size(229, 78);
+            this.button_classes.TabIndex = 3;
+            this.button_classes.Text = "                  CLASSES";
+            this.button_classes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_classes.UseVisualStyleBackColor = false;
+            this.button_classes.Click += new System.EventHandler(this.button_classes_Click);
             // 
             // panel6
             // 
@@ -282,6 +215,23 @@
             this.panel6.Size = new System.Drawing.Size(241, 69);
             this.panel6.TabIndex = 14;
             // 
+            // button_equipment
+            // 
+            this.button_equipment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.button_equipment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_equipment.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_equipment.ForeColor = System.Drawing.Color.White;
+            this.button_equipment.Image = ((System.Drawing.Image)(resources.GetObject("button_equipment.Image")));
+            this.button_equipment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_equipment.Location = new System.Drawing.Point(-3, -7);
+            this.button_equipment.Name = "button_equipment";
+            this.button_equipment.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_equipment.Size = new System.Drawing.Size(229, 86);
+            this.button_equipment.TabIndex = 5;
+            this.button_equipment.Text = "         EQUIPMENT";
+            this.button_equipment.UseVisualStyleBackColor = false;
+            this.button_equipment.Click += new System.EventHandler(this.button_equipment_Click);
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
@@ -290,6 +240,24 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(241, 69);
             this.panel7.TabIndex = 15;
+            // 
+            // button_payments
+            // 
+            this.button_payments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.button_payments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_payments.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_payments.ForeColor = System.Drawing.Color.White;
+            this.button_payments.Image = ((System.Drawing.Image)(resources.GetObject("button_payments.Image")));
+            this.button_payments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_payments.Location = new System.Drawing.Point(-3, -11);
+            this.button_payments.Name = "button_payments";
+            this.button_payments.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.button_payments.Size = new System.Drawing.Size(229, 96);
+            this.button_payments.TabIndex = 4;
+            this.button_payments.Text = "                  PAYMENTS";
+            this.button_payments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_payments.UseVisualStyleBackColor = false;
+            this.button_payments.Click += new System.EventHandler(this.button_payments_Click);
             // 
             // panel8
             // 
@@ -300,13 +268,48 @@
             this.panel8.Size = new System.Drawing.Size(241, 69);
             this.panel8.TabIndex = 16;
             // 
+            // button_reports
+            // 
+            this.button_reports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.button_reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_reports.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_reports.Image = ((System.Drawing.Image)(resources.GetObject("button_reports.Image")));
+            this.button_reports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_reports.Location = new System.Drawing.Point(-3, -9);
+            this.button_reports.Name = "button_reports";
+            this.button_reports.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
+            this.button_reports.Size = new System.Drawing.Size(229, 85);
+            this.button_reports.TabIndex = 6;
+            this.button_reports.Text = "                  REPORTS";
+            this.button_reports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_reports.UseVisualStyleBackColor = false;
+            this.button_reports.Click += new System.EventHandler(this.button_reports_Click);
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.Controls.Add(this.button1);
             this.panel9.Location = new System.Drawing.Point(3, 590);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(241, 69);
             this.panel9.TabIndex = 16;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(-2, -8);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(229, 85);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "                  ACCOUNTS";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel10
             // 
@@ -340,6 +343,23 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(241, 69);
             this.panel12.TabIndex = 21;
+            // 
+            // button_logout
+            // 
+            this.button_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.button_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_logout.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_logout.Image = ((System.Drawing.Image)(resources.GetObject("button_logout.Image")));
+            this.button_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_logout.Location = new System.Drawing.Point(-3, -13);
+            this.button_logout.Name = "button_logout";
+            this.button_logout.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
+            this.button_logout.Size = new System.Drawing.Size(241, 100);
+            this.button_logout.TabIndex = 7;
+            this.button_logout.Text = "                 LOG OUT";
+            this.button_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_logout.UseVisualStyleBackColor = false;
+            this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
             // 
             // panel15
             // 
@@ -383,6 +403,7 @@
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -413,5 +434,6 @@
         private System.Windows.Forms.Panel panelAdmin_UC;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Button button1;
     }
 }

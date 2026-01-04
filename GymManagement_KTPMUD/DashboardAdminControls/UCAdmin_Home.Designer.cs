@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAdmin_Home));
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.roundedPanel12 = new CustomControl.RoundedPanel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -62,6 +61,7 @@
             this.roundedPanel5 = new CustomControl.RoundedPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
             this.roundedPanel12.SuspendLayout();
@@ -89,7 +89,7 @@
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(1800, 999);
+            this.pictureBox5.Size = new System.Drawing.Size(1850, 999);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
@@ -111,18 +111,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1667, 221);
             this.panel6.TabIndex = 10;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(708, 271);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(374, 41);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "WELCOME BACK, ADMIN";
             // 
             // roundedPanel12
             // 
@@ -511,6 +499,18 @@
             this.label3.Text = "CLASSES";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(708, 271);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(374, 41);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "WELCOME BACK, ADMIN";
+            // 
             // UCAdmin_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -519,7 +519,7 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.pictureBox5);
             this.Name = "UCAdmin_Home";
-            this.Size = new System.Drawing.Size(1800, 1100);
+            this.Size = new System.Drawing.Size(1850, 1100);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel6.ResumeLayout(false);
             this.roundedPanel12.ResumeLayout(false);

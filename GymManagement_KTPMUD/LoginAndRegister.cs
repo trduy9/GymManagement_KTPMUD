@@ -67,7 +67,15 @@ namespace GymManagement_KTPMUD
             pictureBox_eyeRegister.Image = Properties.Resources.hide;
         }
 
-    
+        public static class Session
+        {
+            public static int UserID;
+            public static string Username;
+            public static string Role;
+            public static int? MemberID;   // NULL nếu chưa đăng ký membership
+        }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -114,83 +122,164 @@ namespace GymManagement_KTPMUD
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            //string username = textbox_username_login.Text.Trim();
+            //string password = textbox_password_login.Text.Trim();
+
+            //// 🔍 Kiểm tra rỗng hoặc placeholder
+            //if (string.IsNullOrEmpty(username) || username == "username" ||
+            //    string.IsNullOrEmpty(password) || password == "password")
+            //{
+            //    MessageBox.Show("Please enter both username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
+
+            //try
+            //{
+            //    conn.Open();
+            //    string query = "SELECT Role FROM UserAccount WHERE Username=@Username AND Password=@Password";
+
+
+            //    SqlCommand cmd = new SqlCommand(query, conn);
+            //    cmd.Parameters.AddWithValue("@Username", username);
+            //    cmd.Parameters.AddWithValue("@Password", password);
+
+            //    object roleObj = cmd.ExecuteScalar();
+
+            //    if (roleObj != null)
+            //    {
+            //        string role = roleObj.ToString();
+            //        MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //        // Ẩn form login
+            //        this.Hide();
+
+            //        // Phân nhánh form theo Role
+            //        Form dashboardForm = null;
+            //        switch (role.ToLower())
+            //        {
+            //            case "admin":
+            //                dashboardForm = new DashboardAdmin();
+            //                break;
+
+            //            //case "trainer":
+            //            //    dashboardForm = new DashboardTrainer();
+            //            //    break;
+
+            //            //case "staff":
+            //            //    dashboardForm = new DashboardStaff();
+            //            //    break;
+
+            //            case "member":
+            //                dashboardForm = new DashboardUser();
+            //                break;
+
+            //            default:
+            //                MessageBox.Show("Unknown role: " + role, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //                this.Show();
+            //                return;
+            //        }
+
+            //        // Gửi thông tin username & role sang dashboard
+            //        dashboardForm.Tag = new Tuple<string, string>(username, role);
+
+            //        // Khi dashboard đóng -> thoát chương trình
+            //        dashboardForm.FormClosed += (s, args) => Application.Exit();
+
+            //        // Hiển thị dashboard
+            //        dashboardForm.Show();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            //finally
+            //{
+            //    conn.Close();
+            //}
+
+   
             string username = textbox_username_login.Text.Trim();
             string password = textbox_password_login.Text.Trim();
 
-            // 🔍 Kiểm tra rỗng hoặc placeholder
             if (string.IsNullOrEmpty(username) || username == "username" ||
                 string.IsNullOrEmpty(password) || password == "password")
             {
-                MessageBox.Show("Please enter both username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter both username and password.");
                 return;
             }
 
             try
             {
                 conn.Open();
-                string query = "SELECT Role FROM UserAccount WHERE Username=@Username AND Password=@Password";
+
+                string query = @"
+                SELECT UserID, Role, MemberID
+                FROM UserAccount
+                WHERE Username = @Username AND Password = @Password";
+
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Username", username);
                 cmd.Parameters.AddWithValue("@Password", password);
 
-                object roleObj = cmd.ExecuteScalar();
+                SqlDataReader rd = cmd.ExecuteReader();
 
-                if (roleObj != null)
+                if (rd.Read())
                 {
-                    string role = roleObj.ToString();
-                    MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Lưu session
+                    Session.UserID = Convert.ToInt32(rd["UserID"]);
+                    Session.Username = username;
+                    Session.Role = rd["Role"].ToString();
 
-                    // Ẩn form login
+                    if (rd["MemberID"] != DBNull.Value)
+                        Session.MemberID = Convert.ToInt32(rd["MemberID"]);
+                    else
+                        Session.MemberID = null;
+
+                    MessageBox.Show("Login successful!");
+
                     this.Hide();
 
-                    // Phân nhánh form theo Role
-                    Form dashboardForm = null;
-                    switch (role.ToLower())
+                    Form dashboard = null;
+
+                    switch (Session.Role.ToLower())
                     {
                         case "admin":
-                            dashboardForm = new DashboardAdmin();
+                            dashboard = new DashboardAdmin();
                             break;
 
-                        //case "trainer":
-                        //    dashboardForm = new DashboardTrainer();
-                        //    break;
-
-                        //case "staff":
-                        //    dashboardForm = new DashboardStaff();
-                        //    break;
-
-                        //case "member":
-                        //    dashboardForm = new DashboardMember();
-                        //    break;
+                        case "member":
+                            dashboard = new DashboardUser();
+                            break;
 
                         default:
-                            MessageBox.Show("Unknown role: " + role, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Unknown role.");
                             this.Show();
                             return;
                     }
 
-                    // Gửi thông tin username & role sang dashboard
-                    dashboardForm.Tag = new Tuple<string, string>(username, role);
-
-                    // Khi dashboard đóng -> thoát chương trình
-                    dashboardForm.FormClosed += (s, args) => Application.Exit();
-
-                    // Hiển thị dashboard
-                    dashboardForm.Show();
+                    dashboard.FormClosed += (s, args) => Application.Exit();
+                    dashboard.Show();
                 }
                 else
                 {
-                    MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid username or password.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex.Message);
             }
             finally
             {
                 conn.Close();
             }
+      
+
         }
 
 

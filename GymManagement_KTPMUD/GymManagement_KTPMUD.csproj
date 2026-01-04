@@ -186,6 +186,12 @@
     <Compile Include="DashboardAdminControls\FormEditEmployees.Designer.cs">
       <DependentUpon>FormEditEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashboardAdminControls\UCAdmin_Accounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardAdminControls\UCAdmin_Accounts.Designer.cs">
+      <DependentUpon>UCAdmin_Accounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="DashboardAdminControls\UCAdmin_Classes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -246,6 +252,42 @@
     <Compile Include="DashboardAdminControls\UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashboardUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardUser.Designer.cs">
+      <DependentUpon>DashboardUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUserControls\FormQRCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardUserControls\FormQRCode.Designer.cs">
+      <DependentUpon>FormQRCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUserControls\FormRegisterMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardUserControls\FormRegisterMembership.Designer.cs">
+      <DependentUpon>FormRegisterMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUserControls\UCUser_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardUserControls\UCUser_Home.Designer.cs">
+      <DependentUpon>UCUser_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUserControls\UCUser_Membership.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardUserControls\UCUser_Membership.Designer.cs">
+      <DependentUpon>UCUser_Membership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUserControls\UCUser_Payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardUserControls\UCUser_Payment.Designer.cs">
+      <DependentUpon>UCUser_Payment.cs</DependentUpon>
+    </Compile>
     <Compile Include="GradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -291,6 +333,9 @@
     <EmbeddedResource Include="DashboardAdminControls\FormEditEmployees.resx">
       <DependentUpon>FormEditEmployees.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DashboardAdminControls\UCAdmin_Accounts.resx">
+      <DependentUpon>UCAdmin_Accounts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DashboardAdminControls\UCAdmin_Classes.resx">
       <DependentUpon>UCAdmin_Classes.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,6 +365,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardAdminControls\UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUser.resx">
+      <DependentUpon>DashboardUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUserControls\FormQRCode.resx">
+      <DependentUpon>FormQRCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUserControls\FormRegisterMembership.resx">
+      <DependentUpon>FormRegisterMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUserControls\UCUser_Home.resx">
+      <DependentUpon>UCUser_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUserControls\UCUser_Membership.resx">
+      <DependentUpon>UCUser_Membership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUserControls\UCUser_Payment.resx">
+      <DependentUpon>UCUser_Payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginAndRegister.resx">
       <DependentUpon>LoginAndRegister.cs</DependentUpon>
