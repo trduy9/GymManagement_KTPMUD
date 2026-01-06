@@ -31,9 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.gradientPanel1 = new CustomControl.GradientPanel();
             this.panelMenu = new CustomControl.GradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.roundAnglePanel1 = new CustomControl.RoundAnglePanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_login = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -54,10 +55,9 @@
             this.textbox_username_register = new System.Windows.Forms.TextBox();
             this.button_SignUpAfter = new System.Windows.Forms.Button();
             this.picturebox3_login = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.roundAnglePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_login.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_eyeLogin)).BeginInit();
@@ -68,7 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_eyeRegister)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox3_login)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -77,17 +76,11 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // gradientPanel1
-            // 
-            this.gradientPanel1.gradientBottom = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.gradientPanel1.gradientTop = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gradientPanel1.Location = new System.Drawing.Point(0, -2);
-            this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1001, 34);
-            this.gradientPanel1.TabIndex = 2;
-            // 
             // panelMenu
             // 
+            this.panelMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(87)))));
             this.panelMenu.Controls.Add(this.label1);
             this.panelMenu.Controls.Add(this.roundAnglePanel1);
@@ -95,11 +88,23 @@
             this.panelMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(87)))));
             this.panelMenu.gradientBottom = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.panelMenu.gradientTop = System.Drawing.Color.DimGray;
-            this.panelMenu.Location = new System.Drawing.Point(0, 27);
+            this.panelMenu.Location = new System.Drawing.Point(0, -5);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(1001, 626);
+            this.panelMenu.Size = new System.Drawing.Size(1001, 658);
             this.panelMenu.TabIndex = 9;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(121, 382);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(252, 53);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "LOJ FITNESS";
             // 
             // roundAnglePanel1
             // 
@@ -118,6 +123,16 @@
             this.roundAnglePanel1.Size = new System.Drawing.Size(434, 544);
             this.roundAnglePanel1.TabIndex = 0;
             this.roundAnglePanel1.Thickness = 2F;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(113, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(213, 152);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // panel_login
             // 
@@ -351,43 +366,21 @@
             this.picturebox3_login.TabStop = false;
             this.picturebox3_login.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(121, 382);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 53);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "LOJ FITNESS";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(113, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(213, 152);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 650);
-            this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.panelMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.roundAnglePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_login.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -403,7 +396,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox3_login)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -421,7 +413,6 @@
         private CustomControl.RoundAnglePanel roundAnglePanel1;
         private System.Windows.Forms.TextBox textbox_username_login;
         private System.Windows.Forms.TextBox textbox_password_login;
-        private CustomControl.GradientPanel gradientPanel1;
         private System.Windows.Forms.TextBox textbox_email_register;
         private System.Windows.Forms.TextBox textbox_password_register;
         private System.Windows.Forms.TextBox textbox_username_register;

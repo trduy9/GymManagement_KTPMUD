@@ -288,6 +288,12 @@
     <Compile Include="DashboardUserControls\UCUser_Payment.Designer.cs">
       <DependentUpon>UCUser_Payment.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashboardUserControls\UCUser_Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardUserControls\UCUser_Profile.Designer.cs">
+      <DependentUpon>UCUser_Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="GradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -383,6 +389,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardUserControls\UCUser_Payment.resx">
       <DependentUpon>UCUser_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUserControls\UCUser_Profile.resx">
+      <DependentUpon>UCUser_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginAndRegister.resx">
       <DependentUpon>LoginAndRegister.cs</DependentUpon>

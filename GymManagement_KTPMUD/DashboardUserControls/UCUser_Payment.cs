@@ -28,38 +28,22 @@ namespace GymManagement_KTPMUD.DashboardUserControls
 
         }
 
-        //int GetMemberID(string username)
-        //{
-        //    string sql = "SELECT MemberID FROM Member WHERE Email = (SELECT Email FROM UserAccount WHERE Username=@u)";
-
-        //    SqlCommand cmd = new SqlCommand(sql, connectionString);
-        //    cmd.Parameters.AddWithValue("@u", username);
-
-        //    object result = cmd.ExecuteScalar();
-        //    if (result != null)
-        //        return Convert.ToInt32(result);
-        //    else
-        //        return -1;
-        //}
-
-
         //void LoadPaymentInfo(int memberId)
         //{
         //    SqlConnection conn = new SqlConnection(connectionString);
 
         //    string sql = @"
         //    SELECT 
-        //        p.PaymentID,
         //        mp.PlanName,
         //        mp.Price,
         //        mp.DurationMonths,
         //        m.JoinDate,
-        //        p.Amount
-        //    FROM Member m
-        //    JOIN Payment p ON m.MemberID = p.MemberID
-        //    JOIN MembershipPlan mp ON m.PlanID = mp.PlanID
-        //    WHERE m.MemberID = @mid AND p.Status = 'Pending'
-        //    ";
+        //        p.Amount,
+        //        p.PaymentID
+        //    FROM Payment p
+        //    JOIN Member m ON p.MemberID = m.MemberID
+        //    JOIN MembershipPlan mp ON p.PlanID = mp.PlanID
+        //    WHERE p.MemberID = @mid AND p.Status = 'Pending'";
 
         //    SqlCommand cmd = new SqlCommand(sql, conn);
         //    cmd.Parameters.AddWithValue("@mid", memberId);
@@ -72,14 +56,14 @@ namespace GymManagement_KTPMUD.DashboardUserControls
         //        currentPaymentID = Convert.ToInt32(rd["PaymentID"]);
 
         //        lbPlanName.Text = rd["PlanName"].ToString();
-        //        lbPlanPrice.Text = "$" + rd["Price"].ToString();
+        //        lbPlanPrice.Text = "$" + rd["Price"];
         //        lbJoinDate.Text = Convert.ToDateTime(rd["JoinDate"]).ToString("dd MMM yyyy");
-        //        lbDuration.Text = rd["DurationMonths"] + " Months";
-        //        lbTotalDue.Text = "$" + rd["Amount"].ToString();
+        //        lbDuration.Text = rd["DurationMonths"] + " months";
+        //        lbTotalDue.Text = "$" + rd["Amount"];
         //    }
         //    else
         //    {
-        //        MessageBox.Show("No pending payment found.");
+        //        MessageBox.Show("No pending payment.");
         //    }
 
         //    conn.Close();
@@ -87,44 +71,62 @@ namespace GymManagement_KTPMUD.DashboardUserControls
 
         void LoadPaymentInfo(int memberId)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
-
-            string sql = @"
-            SELECT 
-                mp.PlanName,
-                mp.Price,
-                mp.DurationMonths,
-                m.JoinDate,
-                p.Amount,
-                p.PaymentID
-            FROM Payment p
-            JOIN Member m ON p.MemberID = m.MemberID
-            JOIN MembershipPlan mp ON p.PlanID = mp.PlanID
-            WHERE p.MemberID = @mid AND p.Status = 'Pending'";
-
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@mid", memberId);
-
-            conn.Open();
-            SqlDataReader rd = cmd.ExecuteReader();
-
-            if (rd.Read())
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                currentPaymentID = Convert.ToInt32(rd["PaymentID"]);
+                string sql = @"
+                SELECT TOP 1
+                    mp.PlanName,
+                    mp.Price,
+                    mp.DurationMonths,
+                    m.JoinDate,
+                    m.MemberStatus,
+                    p.Amount,
+                    p.PaymentID,
+                    p.Status AS PaymentStatus
+                FROM Payment p
+                JOIN Member m ON p.MemberID = m.MemberID
+                JOIN MembershipPlan mp ON p.PlanID = mp.PlanID
+                WHERE p.MemberID = @mid
+                ORDER BY p.PaymentID DESC";
 
-                lbPlanName.Text = rd["PlanName"].ToString();
-                lbPlanPrice.Text = "$" + rd["Price"];
-                lbJoinDate.Text = Convert.ToDateTime(rd["JoinDate"]).ToString("dd MMM yyyy");
-                lbDuration.Text = rd["DurationMonths"] + " months";
-                lbTotalDue.Text = "$" + rd["Amount"];
-            }
-            else
-            {
-                MessageBox.Show("No pending payment.");
-            }
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@mid", memberId);
 
-            conn.Close();
+                conn.Open();
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                if (rd.Read())
+                {
+                    currentPaymentID = Convert.ToInt32(rd["PaymentID"]);
+
+                    lbPlanName.Text = rd["PlanName"].ToString();
+                    lbPlanPrice.Text = "$" + rd["Price"];
+                    lbJoinDate.Text = Convert.ToDateTime(rd["JoinDate"]).ToString("dd MMM yyyy");
+                    lbDuration.Text = rd["DurationMonths"] + " months";
+                    lbTotalDue.Text = "$" + rd["Amount"];
+
+                    string memberStatus = rd["MemberStatus"].ToString();
+
+                    if (memberStatus == "Active")
+                    {
+                        lbStatus.Text = "Activate";
+                        lbStatus.ForeColor = Color.Green;
+                        btPayNow.Enabled = false;   // đã thanh toán thì khóa nút
+                    }
+                    else
+                    {
+                        lbStatus.Text = "Inactivate";
+                        lbStatus.ForeColor = Color.Red;
+                        btPayNow.Enabled = true;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No payment found.");
+                }
+            }
         }
+
 
         private void UCUser_Payment_Load(object sender, EventArgs e)
         {

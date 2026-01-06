@@ -42,6 +42,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lbPlanName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbStatus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +78,8 @@
             // 
             this.roundedPanel1.BackColor = System.Drawing.Color.White;
             this.roundedPanel1.BorderRadius = 30;
+            this.roundedPanel1.Controls.Add(this.lbStatus);
+            this.roundedPanel1.Controls.Add(this.label2);
             this.roundedPanel1.Controls.Add(this.lbTotalDue);
             this.roundedPanel1.Controls.Add(this.lbDuration);
             this.roundedPanel1.Controls.Add(this.lbJoinDate);
@@ -113,7 +117,7 @@
             this.lbDuration.BackColor = System.Drawing.Color.Transparent;
             this.lbDuration.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDuration.ForeColor = System.Drawing.Color.White;
-            this.lbDuration.Location = new System.Drawing.Point(203, 234);
+            this.lbDuration.Location = new System.Drawing.Point(203, 220);
             this.lbDuration.Name = "lbDuration";
             this.lbDuration.Size = new System.Drawing.Size(111, 31);
             this.lbDuration.TabIndex = 8;
@@ -125,7 +129,7 @@
             this.lbJoinDate.BackColor = System.Drawing.Color.Transparent;
             this.lbJoinDate.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbJoinDate.ForeColor = System.Drawing.Color.White;
-            this.lbJoinDate.Location = new System.Drawing.Point(203, 187);
+            this.lbJoinDate.Location = new System.Drawing.Point(203, 173);
             this.lbJoinDate.Name = "lbJoinDate";
             this.lbJoinDate.Size = new System.Drawing.Size(113, 31);
             this.lbJoinDate.TabIndex = 7;
@@ -137,7 +141,7 @@
             this.lbPlanPrice.BackColor = System.Drawing.Color.Transparent;
             this.lbPlanPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPlanPrice.ForeColor = System.Drawing.Color.White;
-            this.lbPlanPrice.Location = new System.Drawing.Point(203, 138);
+            this.lbPlanPrice.Location = new System.Drawing.Point(203, 124);
             this.lbPlanPrice.Name = "lbPlanPrice";
             this.lbPlanPrice.Size = new System.Drawing.Size(52, 31);
             this.lbPlanPrice.TabIndex = 6;
@@ -161,7 +165,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(64, 234);
+            this.label5.Location = new System.Drawing.Point(64, 220);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 31);
             this.label5.TabIndex = 4;
@@ -173,7 +177,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(64, 187);
+            this.label4.Location = new System.Drawing.Point(64, 173);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 31);
             this.label4.TabIndex = 3;
@@ -185,7 +189,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(63, 138);
+            this.label3.Location = new System.Drawing.Point(63, 124);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 31);
             this.label3.TabIndex = 2;
@@ -198,7 +202,7 @@
             this.lbPlanName.BackColor = System.Drawing.Color.Transparent;
             this.lbPlanName.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPlanName.ForeColor = System.Drawing.Color.White;
-            this.lbPlanName.Location = new System.Drawing.Point(63, 89);
+            this.lbPlanName.Location = new System.Drawing.Point(63, 75);
             this.lbPlanName.Name = "lbPlanName";
             this.lbPlanName.Size = new System.Drawing.Size(193, 38);
             this.lbPlanName.TabIndex = 1;
@@ -217,6 +221,30 @@
             this.label1.Size = new System.Drawing.Size(290, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "       Payment Due";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(64, 264);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 31);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Status:";
+            // 
+            // lbStatus
+            // 
+            this.lbStatus.AutoSize = true;
+            this.lbStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lbStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbStatus.ForeColor = System.Drawing.Color.White;
+            this.lbStatus.Location = new System.Drawing.Point(203, 264);
+            this.lbStatus.Name = "lbStatus";
+            this.lbStatus.Size = new System.Drawing.Size(115, 31);
+            this.lbStatus.TabIndex = 13;
+            this.lbStatus.Text = "Inactivate";
             // 
             // UCUser_Payment
             // 
@@ -249,5 +277,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btPayNow;
+        private System.Windows.Forms.Label lbStatus;
+        private System.Windows.Forms.Label label2;
     }
 }

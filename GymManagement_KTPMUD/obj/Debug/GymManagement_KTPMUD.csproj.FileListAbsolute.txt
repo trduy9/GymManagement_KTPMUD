@@ -62,3 +62,4 @@ F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_
 F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardUserControls.FormRegisterMembership.resources
 F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardUserControls.UCUser_Payment.resources
 F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardUserControls.FormQRCode.resources
+F:\BTL_KTPMUD\GymManagement_KTPMUD\GymManagement_KTPMUD\obj\Debug\GymManagement_KTPMUD.DashboardUserControls.UCUser_Profile.resources

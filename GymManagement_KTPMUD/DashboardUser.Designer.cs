@@ -33,10 +33,13 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button_home = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.button_membership = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button_payments = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -44,16 +47,10 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button_home = new System.Windows.Forms.Button();
-            this.button_membership = new System.Windows.Forms.Button();
-            this.button_classes = new System.Windows.Forms.Button();
-            this.button_payments = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.button_logout = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -78,7 +75,6 @@
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Controls.Add(this.panel5);
             this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Controls.Add(this.panel9);
             this.flowLayoutPanel1.Controls.Add(this.panel10);
@@ -110,99 +106,6 @@
             this.panel3.Size = new System.Drawing.Size(241, 69);
             this.panel3.TabIndex = 0;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.button_membership);
-            this.panel4.Location = new System.Drawing.Point(3, 140);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(241, 69);
-            this.panel4.TabIndex = 12;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.button_classes);
-            this.panel5.Location = new System.Drawing.Point(3, 215);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(241, 69);
-            this.panel5.TabIndex = 13;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Controls.Add(this.button_payments);
-            this.panel7.Location = new System.Drawing.Point(3, 290);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(241, 69);
-            this.panel7.TabIndex = 15;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Transparent;
-            this.panel9.Controls.Add(this.button1);
-            this.panel9.Location = new System.Drawing.Point(3, 365);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(241, 69);
-            this.panel9.TabIndex = 16;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Transparent;
-            this.panel10.Location = new System.Drawing.Point(3, 440);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(227, 69);
-            this.panel10.TabIndex = 17;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Transparent;
-            this.panel13.Location = new System.Drawing.Point(3, 515);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(226, 69);
-            this.panel13.TabIndex = 19;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.Transparent;
-            this.panel14.Location = new System.Drawing.Point(3, 590);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(226, 69);
-            this.panel14.TabIndex = 20;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Transparent;
-            this.panel12.Location = new System.Drawing.Point(3, 665);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(241, 69);
-            this.panel12.TabIndex = 21;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.Transparent;
-            this.panel15.Location = new System.Drawing.Point(3, 740);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(219, 69);
-            this.panel15.TabIndex = 22;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(3, 815);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(219, 69);
-            this.panel1.TabIndex = 23;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Controls.Add(this.button_logout);
-            this.panel6.Location = new System.Drawing.Point(3, 890);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(219, 69);
-            this.panel6.TabIndex = 24;
-            // 
             // button_home
             // 
             this.button_home.AutoEllipsis = true;
@@ -222,6 +125,15 @@
             this.button_home.UseVisualStyleBackColor = false;
             this.button_home.Click += new System.EventHandler(this.button_home_Click);
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.button_membership);
+            this.panel4.Location = new System.Drawing.Point(3, 140);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(241, 69);
+            this.panel4.TabIndex = 12;
+            // 
             // button_membership
             // 
             this.button_membership.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
@@ -240,22 +152,14 @@
             this.button_membership.UseVisualStyleBackColor = false;
             this.button_membership.Click += new System.EventHandler(this.button_employees_Click);
             // 
-            // button_classes
+            // panel7
             // 
-            this.button_classes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.button_classes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_classes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_classes.ForeColor = System.Drawing.Color.White;
-            this.button_classes.Image = ((System.Drawing.Image)(resources.GetObject("button_classes.Image")));
-            this.button_classes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_classes.Location = new System.Drawing.Point(-3, -2);
-            this.button_classes.Name = "button_classes";
-            this.button_classes.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
-            this.button_classes.Size = new System.Drawing.Size(229, 78);
-            this.button_classes.TabIndex = 3;
-            this.button_classes.Text = "                  CLASSES";
-            this.button_classes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_classes.UseVisualStyleBackColor = false;
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.button_payments);
+            this.panel7.Location = new System.Drawing.Point(3, 215);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(241, 69);
+            this.panel7.TabIndex = 15;
             // 
             // button_payments
             // 
@@ -275,6 +179,15 @@
             this.button_payments.UseVisualStyleBackColor = false;
             this.button_payments.Click += new System.EventHandler(this.button_payments_Click);
             // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.Controls.Add(this.button1);
+            this.panel9.Location = new System.Drawing.Point(3, 290);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(241, 69);
+            this.panel9.TabIndex = 16;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
@@ -291,6 +204,64 @@
             this.button1.Text = "                  PROFILE";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.Location = new System.Drawing.Point(3, 365);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(227, 69);
+            this.panel10.TabIndex = 17;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Transparent;
+            this.panel13.Location = new System.Drawing.Point(3, 440);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(226, 69);
+            this.panel13.TabIndex = 19;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.Transparent;
+            this.panel14.Location = new System.Drawing.Point(3, 515);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(226, 69);
+            this.panel14.TabIndex = 20;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.Transparent;
+            this.panel12.Location = new System.Drawing.Point(3, 590);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(241, 69);
+            this.panel12.TabIndex = 21;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.Transparent;
+            this.panel15.Location = new System.Drawing.Point(3, 665);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(219, 69);
+            this.panel15.TabIndex = 22;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Location = new System.Drawing.Point(3, 740);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(219, 69);
+            this.panel1.TabIndex = 23;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.Controls.Add(this.button_logout);
+            this.panel6.Location = new System.Drawing.Point(3, 815);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(219, 69);
+            this.panel6.TabIndex = 24;
             // 
             // button_logout
             // 
@@ -324,7 +295,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -341,8 +311,6 @@
         private System.Windows.Forms.Button button_home;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button_membership;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button_classes;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button_payments;
         private System.Windows.Forms.Panel panel9;

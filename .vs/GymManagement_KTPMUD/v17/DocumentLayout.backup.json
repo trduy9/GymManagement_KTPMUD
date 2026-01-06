@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|f:\\btl_ktpmud\\gymmanagement_ktpmud\\gymmanagement_ktpmud\\dashboardusercontrols\\formregistermembership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardusercontrols\\formregistermembership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\loginandregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\loginandregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboarduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboarduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboarduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboarduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|f:\\btl_ktpmud\\gymmanagement_ktpmud\\gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|f:\\btl_ktpmud\\gymmanagement_ktpmud\\gymmanagement_ktpmud\\loginandregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\loginandregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\loginandregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\loginandregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardadmincontrols\\ucadmin_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,20 +39,12 @@
       "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardadmincontrols\\formeditcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardadmincontrols\\ucadmin_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardadmincontrols\\ucadmin_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardusercontrols\\formqrcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardusercontrols\\formqrcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|solutionrelative:gymmanagement_ktpmud\\dashboardusercontrols\\ucuser_membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20FA775E-5906-4CF9-835B-F385A8AB36F3}|GymManagement_KTPMUD\\GymManagement_KTPMUD.csproj|F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\gymmanagement_ktpmud\\dashboardadmincontrols\\ucadmin_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -89,60 +85,85 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormRegisterMembership.cs",
-              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\FormRegisterMembership.cs",
-              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUserControls\\FormRegisterMembership.cs",
-              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\FormRegisterMembership.cs",
-              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUserControls\\FormRegisterMembership.cs",
-              "ViewState": "AgIAALYAAAAAAAAAAAAewLQAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T10:35:00.642Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DashboardUser.cs",
-              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUser.cs",
-              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUser.cs",
-              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUser.cs",
-              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "Title": "LoginAndRegister.cs [Design]",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\LoginAndRegister.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\LoginAndRegister.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\LoginAndRegister.cs [Design]",
+              "RelativeToolTip": "GymManagement_KTPMUD\\LoginAndRegister.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T10:22:13.088Z"
+              "WhenOpened": "2026-01-06T00:50:10.977Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DashboardUser.cs [Design]",
-              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUser.cs",
-              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUser.cs",
-              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUser.cs [Design]",
-              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUser.cs [Design]",
+              "Title": "UCUser_Profile.cs [Design]",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Profile.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Profile.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Profile.cs [Design]*",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Profile.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T10:22:11.906Z"
+              "WhenOpened": "2026-01-05T15:52:42.067Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UCAdmin_Payment.cs",
-              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Payment.cs",
-              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Payment.cs",
-              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Payment.cs",
-              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Payment.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAewMQAAABCAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UCUser_Profile.cs",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Profile.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Profile.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Profile.cs*",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Profile.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAEwEsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T09:14:05.721Z"
+              "WhenOpened": "2026-01-05T15:58:24.292Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "UCUser_Payment.cs",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T14:33:17.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UCUser_Payment.cs [Design]",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs [Design]",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T14:34:55.358Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UCUser_Membership.cs [Design]",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs [Design]",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T14:42:58.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "FormEditCustomers.cs",
               "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\FormEditCustomers.cs",
               "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdminControls\\FormEditCustomers.cs",
@@ -154,7 +175,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "UCAdmin_Payment.cs",
+              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Payment.cs",
+              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Payment.cs",
+              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Payment.cs",
+              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Payment.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAewMQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T09:14:05.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LoginAndRegister.cs",
               "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\LoginAndRegister.cs",
               "RelativeDocumentMoniker": "GymManagement_KTPMUD\\LoginAndRegister.cs",
@@ -162,41 +195,8 @@
               "RelativeToolTip": "GymManagement_KTPMUD\\LoginAndRegister.cs",
               "ViewState": "AgIAAOYBAAAAAAAAAAAcwO4BAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T03:20:40.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UCUser_Payment.cs",
-              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
-              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
-              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
-              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAewFcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T14:33:17.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UCUser_Membership.cs [Design]",
-              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs",
-              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs",
-              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs [Design]",
-              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T14:42:58.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UCUser_Payment.cs [Design]",
-              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
-              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs",
-              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs [Design]",
-              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Payment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T14:34:55.358Z"
+              "WhenOpened": "2026-01-01T03:20:40.552Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -211,18 +211,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UCUser_Membership.cs",
-              "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs",
-              "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs",
-              "ToolTip": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs",
-              "RelativeToolTip": "GymManagement_KTPMUD\\DashboardUserControls\\UCUser_Membership.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAiwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T08:41:43.489Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
               "Title": "FormQRCode.cs [Design]",
               "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardUserControls\\FormQRCode.cs",
@@ -234,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "UCAdmin_Reports.cs",
               "DocumentMoniker": "F:\\BTL_KTPMUD\\GymManagement_KTPMUD\\GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Reports.cs",
               "RelativeDocumentMoniker": "GymManagement_KTPMUD\\DashboardAdminControls\\UCAdmin_Reports.cs",
