@@ -37,4 +37,7 @@ A desktop-based Gym Management System built with C# WinForms and SQL Server, des
 
 - View daily payments
 
+<img width="1918" height="988" alt="image" src="https://github.com/user-attachments/assets/db9a6547-b943-48cd-8425-09230f414a44" />
+
+
 
