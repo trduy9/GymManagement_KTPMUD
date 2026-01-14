@@ -4,35 +4,37 @@
 A desktop-based Gym Management System built with C# WinForms and SQL Server, designed to manage gym members, memberships, payments, and administrative operations in a secure and efficient way.
 
 📌 Features
+
 👤 User (Member)
 
-Register account & login
+- Register account & login
 
-Choose membership plan
+- Choose membership plan
 
-Register membership
+- Register membership
 
-View payment status
+- View payment status
 
-Pay membership via QR Code (Transfer)
+- Pay membership via QR Code (Transfer)
 
-Access gym dashboard after payment
+- Access gym dashboard after payment
 
-View & edit profile
+- View & edit profile
 
-View membership status
+- View membership status
 
 🛠️ Admin
 
-Manage members
+- Manage members
 
-Create & manage membership plans
+- Create & manage membership plans
 
-Add payments manually
+- Add payments manually
 
-Activate member accounts
+- Activate member accounts
 
-View total revenue
+- View total revenue
 
-View daily payments
+- View daily payments
+
 
