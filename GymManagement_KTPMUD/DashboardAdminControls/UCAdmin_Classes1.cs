@@ -20,14 +20,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             LoadTrainerList();
             LoadClassTable();
             dgvClasses.ReadOnly = true;
-       
-
-
-        }
-
-        private void UCAdmin_Classes1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void LoadTrainerList()
@@ -49,7 +41,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             }
         }
 
-
         private void LoadClassTable(string keyword = "")
         {
             try
@@ -69,8 +60,8 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                     if (!string.IsNullOrWhiteSpace(keyword))
                     {
                         query += @"
-                WHERE C.ClassName LIKE @Search
-                   OR T.FullName LIKE @Search";
+                        WHERE C.ClassName LIKE @Search
+                           OR T.FullName LIKE @Search";
                     }
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -118,17 +109,11 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
         }
 
 
-
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void cuiCalendarDatePicker1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -185,7 +170,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             MessageBox.Show("Added Successfully!");
             LoadClassTable();
         }
-
 
         private void button2_Click(object sender, EventArgs e)
         {

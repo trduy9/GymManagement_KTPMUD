@@ -32,9 +32,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             dgvPaymentMembers.CellClick += dgvMembers_CellClick;
             dgvPayments.CellClick += dgvPayments_CellClick;
 
-            //btnAdd.Click += button1_Click;
-            //btnUpdate.Click += btnUpdate_Click_1;
-            //btnDelete.Click += btnDelete_Click_1;
             btnAdd.Click += btnAdd_Click;
             btnUpdate.Click += btnUpdate_Click;
             btnDelete.Click += btnDelete_Click;
@@ -74,9 +71,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
         }
 
 
-
-
-        // ================== LOAD MEMBER (GRID TRÁI) ==================
+        // LOAD MEMBER (GRID TRÁI) 
         private void LoadMembers()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -97,8 +92,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
 
                 dgvPaymentMembers.DataSource = dt;
 
-                //dgvPaymentMembers.Columns["MemberID"].Visible = false;
-                //dgvPaymentMembers.Columns["JoinDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
                 dgvPaymentMembers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
 
                 if (dgvPaymentMembers.Columns.Contains("FullName"))
@@ -119,7 +112,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
         }
 
 
-        // ================== LOAD PLAN ==================
+        //LOAD PLAN 
         private void LoadPlans()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -135,7 +128,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             }
         }
 
-        // ================== CLICK MEMBER ==================
+        // CLICK MEMBER
         private void dgvMembers_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
@@ -161,7 +154,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             ClearPaymentForm();
         }
 
-        // ================== LOAD PAYMENT HISTORY ==================
+        // LOAD PAYMENT HISTORY 
         private void LoadPaymentsByMember(int memberID)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -206,7 +199,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             }
         }
 
-        // ================== CLICK PAYMENT ==================
+        //  CLICK PAYMENT
         private void dgvPayments_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
@@ -221,7 +214,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 Convert.ToDateTime(row.Cells["PaymentDate"].Value);
         }
 
-        // ================== ADD PAYMENT ==================
+        //  ADD PAYMENT 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (selectedMemberID == -1)
@@ -234,12 +227,12 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             {
                 conn.Open();
 
-                // 1️⃣ Insert Payment (Paid)
+                // Insert Payment (Paid)
                 string insertPayment = @"
-        INSERT INTO Payment
-        (MemberID, PlanID, Amount, PaymentDate, PaymentMethod, Status)
-        VALUES
-        (@MemberID, @PlanID, @Amount, @PaymentDate, @PaymentMethod, 'Paid')";
+                INSERT INTO Payment
+                (MemberID, PlanID, Amount, PaymentDate, PaymentMethod, Status)
+                VALUES
+                (@MemberID, @PlanID, @Amount, @PaymentDate, @PaymentMethod, 'Paid')";
 
                 SqlCommand cmd = new SqlCommand(insertPayment, conn);
                 cmd.Parameters.AddWithValue("@MemberID", selectedMemberID);
@@ -249,7 +242,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 cmd.Parameters.AddWithValue("@PaymentMethod", cbPaymentMethod.Text);
                 cmd.ExecuteNonQuery();
 
-                // 2️⃣ Set Member → Active
+                // Set Member Active
                 SqlCommand updateMember = new SqlCommand(
                     "UPDATE Member SET MemberStatus='Active' WHERE MemberID=@mid",
                     conn);
@@ -276,7 +269,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
 
 
 
-        // ================== UPDATE PAYMENT ==================
+        // UPDATE PAYMENT 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (selectedPaymentID == -1) return;
@@ -305,7 +298,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             LoadPaymentToday();
         }
 
-        // ================== DELETE PAYMENT ==================
+        // DELETE PAYMENT 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (selectedPaymentID == -1) return;
@@ -329,15 +322,13 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             ClearPaymentForm();
         }
 
-        // ================== CLEAR FORM ==================
+        //CLEAR FORM 
         private void ClearPaymentForm()
         {
             txtAmount.Clear();
             cbPaymentMethod.SelectedIndex = -1;
             selectedPaymentID = -1;
         }
-   
-
 
         private void label2_Click(object sender, EventArgs e)
         {

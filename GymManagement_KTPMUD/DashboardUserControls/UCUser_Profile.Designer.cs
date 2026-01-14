@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCUser_Profile));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.roundedPanel1 = new CustomControl.RoundedPanel();
-            this.button1 = new System.Windows.Forms.Button();
             this.lbAddress = new System.Windows.Forms.Label();
             this.lbDOB = new System.Windows.Forms.Label();
             this.lbPhone = new System.Windows.Forms.Label();
@@ -77,7 +76,6 @@
             // 
             this.roundedPanel1.BackColor = System.Drawing.Color.White;
             this.roundedPanel1.BorderRadius = 30;
-            this.roundedPanel1.Controls.Add(this.button1);
             this.roundedPanel1.Controls.Add(this.lbAddress);
             this.roundedPanel1.Controls.Add(this.lbDOB);
             this.roundedPanel1.Controls.Add(this.lbPhone);
@@ -98,19 +96,6 @@
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(1005, 559);
             this.roundedPanel1.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(650, 478);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 48);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Edit Profile";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // lbAddress
             // 
@@ -453,7 +438,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lbPlanName;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lbAddress;
         private System.Windows.Forms.Label lbDOB;
         private System.Windows.Forms.Label lbPhone;

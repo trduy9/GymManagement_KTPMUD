@@ -26,9 +26,6 @@ namespace GymManagement_KTPMUD
 
         }
 
-
-
-
         private void Dashboard_Load(object sender, EventArgs e)
         {
             UCAdmin_Home home = new UCAdmin_Home();

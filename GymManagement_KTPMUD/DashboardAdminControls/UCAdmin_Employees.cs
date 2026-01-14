@@ -19,28 +19,27 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
 
             InitializeComponent();
             LoadEmployees();
-            dGV_Employees.ReadOnly = true;                // không cho chỉnh
+            dGV_Employees.ReadOnly = true;                
             dGV_Employees.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dGV_Employees.MultiSelect = false;            // chỉ chọn 1 dòng
-            dGV_Employees.AllowUserToAddRows = false;     // không cho thêm dòng trống
+            dGV_Employees.MultiSelect = false;            
+            dGV_Employees.AllowUserToAddRows = false;     
         }
 
-        // 📘 Load danh sách huấn luyện viên
         private void LoadEmployees(string searchKeyword = "")
         {
             {
                 string query = @"
-            SELECT 
-                TrainerID,
-                FullName,
-                Phone,
-                Email,
-                Gender,
-                BirthDate,
-                JoinDate,
-                Specialty,
-                ExperienceYears
-            FROM Trainer";
+                SELECT 
+                    TrainerID,
+                    FullName,
+                    Phone,
+                    Email,
+                    Gender,
+                    BirthDate,
+                    JoinDate,
+                    Specialty,
+                    ExperienceYears
+                FROM Trainer";
 
                 if (!string.IsNullOrWhiteSpace(searchKeyword))
                 {
@@ -59,21 +58,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                     da.Fill(dt);
 
                     dGV_Employees.DataSource = dt;
-
-                    //dGV_Employees.Columns["TrainerID"].HeaderText = "Mã HLV";
-                    //dGV_Employees.Columns["FullName"].HeaderText = "Họ và tên";
-                    //dGV_Employees.Columns["Phone"].HeaderText = "Số điện thoại";
-                    //dGV_Employees.Columns["Email"].HeaderText = "Email";
-                    //dGV_Employees.Columns["Gender"].HeaderText = "Giới tính";
-                    //dGV_Employees.Columns["BirthDate"].HeaderText = "Ngày sinh";
-                    //dGV_Employees.Columns["JoinDate"].HeaderText = "Ngày vào làm";
-                    //dGV_Employees.Columns["Specialty"].HeaderText = "Chuyên môn";
-                    //dGV_Employees.Columns["ExperienceYears"].HeaderText = "Năm kinh nghiệm";
-
-
-                    // Tắt tự động co giãn
-                    dGV_Employees.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None
-                        ;
+                    dGV_Employees.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
 
                     // Gán độ rộng cố định cho từng cột
                     if (dGV_Employees.Columns.Contains("TrainerID"))
@@ -131,7 +116,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             // Hiển thị form dưới dạng dialog (modal)
             form.ShowDialog();
 
-            // Sau khi form đóng, load lại danh sách khách hàng
+            // form đóng, load lại danh sách khách hàng
             LoadEmployees();
         }
 

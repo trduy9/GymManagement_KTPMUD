@@ -28,47 +28,6 @@ namespace GymManagement_KTPMUD.DashboardUserControls
 
         }
 
-        //void LoadPaymentInfo(int memberId)
-        //{
-        //    SqlConnection conn = new SqlConnection(connectionString);
-
-        //    string sql = @"
-        //    SELECT 
-        //        mp.PlanName,
-        //        mp.Price,
-        //        mp.DurationMonths,
-        //        m.JoinDate,
-        //        p.Amount,
-        //        p.PaymentID
-        //    FROM Payment p
-        //    JOIN Member m ON p.MemberID = m.MemberID
-        //    JOIN MembershipPlan mp ON p.PlanID = mp.PlanID
-        //    WHERE p.MemberID = @mid AND p.Status = 'Pending'";
-
-        //    SqlCommand cmd = new SqlCommand(sql, conn);
-        //    cmd.Parameters.AddWithValue("@mid", memberId);
-
-        //    conn.Open();
-        //    SqlDataReader rd = cmd.ExecuteReader();
-
-        //    if (rd.Read())
-        //    {
-        //        currentPaymentID = Convert.ToInt32(rd["PaymentID"]);
-
-        //        lbPlanName.Text = rd["PlanName"].ToString();
-        //        lbPlanPrice.Text = "$" + rd["Price"];
-        //        lbJoinDate.Text = Convert.ToDateTime(rd["JoinDate"]).ToString("dd MMM yyyy");
-        //        lbDuration.Text = rd["DurationMonths"] + " months";
-        //        lbTotalDue.Text = "$" + rd["Amount"];
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("No pending payment.");
-        //    }
-
-        //    conn.Close();
-        //}
-
         void LoadPaymentInfo(int memberId)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))

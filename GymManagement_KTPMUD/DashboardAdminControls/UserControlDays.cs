@@ -84,8 +84,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             }
         }
 
-
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             // call the displayClass method

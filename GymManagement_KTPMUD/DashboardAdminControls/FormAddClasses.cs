@@ -52,15 +52,5 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 conn.Close();
             }
         }
-
-
-
-
-
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

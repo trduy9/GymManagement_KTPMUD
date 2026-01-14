@@ -23,7 +23,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             btnAdd.Click += (s, e) => InsertEquipment();
             btnUpdate.Click += (s, e) => UpdateEquipment();
             btnDelete.Click += (s, e) => DeleteEquipment();
-            //btnBrowse.Click += button3_Click;
             dgvEquipment.CellContentClick += dGV_Equipment_CellContentClick;
 
         }
@@ -45,8 +44,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
         {
 
         }
-
-
 
         private void load_equipment(string keyword = "")
         {
@@ -104,8 +101,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -264,9 +259,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 pictureBoxEquipment.Image = null;
             }
         }
-
-
-
 
     }
 }

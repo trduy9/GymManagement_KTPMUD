@@ -25,7 +25,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             displayDays();
         }
 
-
         private void displayDays()
         {
             DateTime now = DateTime.Now;
@@ -62,7 +61,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 ucdays.days(i);
                 daycontainer.Controls.Add(ucdays);
             }
-
         }
 
         private void button1_Click(object sender, EventArgs e)

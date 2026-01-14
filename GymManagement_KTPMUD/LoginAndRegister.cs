@@ -88,12 +88,6 @@ namespace GymManagement_KTPMUD
 
         }
 
-
-
-
-
-
-
         private void button2_Click(object sender, EventArgs e)
         {
             panel_register.Visible = true;
@@ -122,86 +116,6 @@ namespace GymManagement_KTPMUD
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //string username = textbox_username_login.Text.Trim();
-            //string password = textbox_password_login.Text.Trim();
-
-            //// 🔍 Kiểm tra rỗng hoặc placeholder
-            //if (string.IsNullOrEmpty(username) || username == "username" ||
-            //    string.IsNullOrEmpty(password) || password == "password")
-            //{
-            //    MessageBox.Show("Please enter both username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
-
-            //try
-            //{
-            //    conn.Open();
-            //    string query = "SELECT Role FROM UserAccount WHERE Username=@Username AND Password=@Password";
-
-
-            //    SqlCommand cmd = new SqlCommand(query, conn);
-            //    cmd.Parameters.AddWithValue("@Username", username);
-            //    cmd.Parameters.AddWithValue("@Password", password);
-
-            //    object roleObj = cmd.ExecuteScalar();
-
-            //    if (roleObj != null)
-            //    {
-            //        string role = roleObj.ToString();
-            //        MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            //        // Ẩn form login
-            //        this.Hide();
-
-            //        // Phân nhánh form theo Role
-            //        Form dashboardForm = null;
-            //        switch (role.ToLower())
-            //        {
-            //            case "admin":
-            //                dashboardForm = new DashboardAdmin();
-            //                break;
-
-            //            //case "trainer":
-            //            //    dashboardForm = new DashboardTrainer();
-            //            //    break;
-
-            //            //case "staff":
-            //            //    dashboardForm = new DashboardStaff();
-            //            //    break;
-
-            //            case "member":
-            //                dashboardForm = new DashboardUser();
-            //                break;
-
-            //            default:
-            //                MessageBox.Show("Unknown role: " + role, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //                this.Show();
-            //                return;
-            //        }
-
-            //        // Gửi thông tin username & role sang dashboard
-            //        dashboardForm.Tag = new Tuple<string, string>(username, role);
-
-            //        // Khi dashboard đóng -> thoát chương trình
-            //        dashboardForm.FormClosed += (s, args) => Application.Exit();
-
-            //        // Hiển thị dashboard
-            //        dashboardForm.Show();
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-            //finally
-            //{
-            //    conn.Close();
-            //}
-
    
             string username = textbox_username_login.Text.Trim();
             string password = textbox_password_login.Text.Trim();
@@ -281,8 +195,6 @@ namespace GymManagement_KTPMUD
       
 
         }
-
-
 
 
         private void button_SignUpAfter_Click(object sender, EventArgs e)
@@ -367,12 +279,6 @@ namespace GymManagement_KTPMUD
 
 
 
-        private void picturebox1_login_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void textbox_username_login_TextChanged_1(object sender, EventArgs e)
         {
 
@@ -433,22 +339,30 @@ namespace GymManagement_KTPMUD
 
         private void RemovePasswordRegisterPlaceholder(object sender, EventArgs e)
         {
-            if (textbox_password_register.Text == "password")
+
+            if (textbox_password_register.Text == "password" && textbox_password_register.ForeColor == Color.Gray)
             {
                 textbox_password_register.Text = "";
                 textbox_password_register.ForeColor = Color.Black;
-                textbox_password_register.UseSystemPasswordChar = !isRegisterPasswordVisible;
+                textbox_password_register.UseSystemPasswordChar = true; 
             }
         }
 
         private void SetPasswordRegisterPlaceholder(object sender, EventArgs e)
         {
+
             if (string.IsNullOrWhiteSpace(textbox_password_register.Text))
             {
-                textbox_password_register.UseSystemPasswordChar = false;
+
                 textbox_password_register.Text = "password";
                 textbox_password_register.ForeColor = Color.Gray;
+                textbox_password_register.UseSystemPasswordChar = true;
+
+                // Reset icon về hide
+                isLoginPasswordVisible = false;
+                pictureBox_eyeLogin.Image = Properties.Resources.hide;
             }
+
         }
 
         private void RemoveEmailRegisterPlaceholder(object sender, EventArgs e)
@@ -475,6 +389,7 @@ namespace GymManagement_KTPMUD
             {
                 textbox_username_login.Text = "";
                 textbox_username_login.ForeColor = Color.Black;
+
             }
         }
 
@@ -489,27 +404,35 @@ namespace GymManagement_KTPMUD
 
         private void RemovePasswordLoginPlaceholder(object sender, EventArgs e)
         {
-            if (textbox_password_login.Text == "password")
+            if (textbox_password_login.Text == "password" && textbox_password_login.ForeColor == Color.Gray)
             {
                 textbox_password_login.Text = "";
                 textbox_password_login.ForeColor = Color.Black;
-                textbox_password_login.UseSystemPasswordChar = !isLoginPasswordVisible;
+                textbox_password_login.UseSystemPasswordChar = true; // Ẩn ngay khi nhập
             }
         }
 
         private void SetPasswordLoginPlaceholder(object sender, EventArgs e)
         {
+
             if (string.IsNullOrWhiteSpace(textbox_password_login.Text))
             {
-                textbox_password_login.UseSystemPasswordChar = false;
                 textbox_password_login.Text = "password";
                 textbox_password_login.ForeColor = Color.Gray;
+                textbox_password_login.UseSystemPasswordChar = true; 
+
+                // Reset icon về hide
+                isLoginPasswordVisible = false;
+                pictureBox_eyeLogin.Image = Properties.Resources.hide;
             }
+
         }
 
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
+
+
             isLoginPasswordVisible = !isLoginPasswordVisible;
             textbox_password_login.UseSystemPasswordChar = !isLoginPasswordVisible;
             pictureBox_eyeLogin.Image = isLoginPasswordVisible
@@ -519,6 +442,7 @@ namespace GymManagement_KTPMUD
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+
             isRegisterPasswordVisible = !isRegisterPasswordVisible;
             textbox_password_register.UseSystemPasswordChar = !isRegisterPasswordVisible;
             pictureBox_eyeRegister.Image = isRegisterPasswordVisible

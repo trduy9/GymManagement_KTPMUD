@@ -155,7 +155,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             }
         }
 
-
         private void LoadRecentPayments()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -229,7 +228,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             }
         }
 
-
         private void LoadGenderChart()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -272,10 +270,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 chartGender.Legends.Add(legend);
             }
         }
-
-
-
-
 
         private void lblTotalRevenue_Click(object sender, EventArgs e)
         {

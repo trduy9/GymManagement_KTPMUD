@@ -31,7 +31,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             LoadCustomers(keyword);
         }
 
-
         private void LoadCustomers(string keyword = "")
         {
             try
@@ -40,18 +39,18 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 {
                     // Truy vấn đầy đủ thông tin khách hàng + tên gói tập
                     string query = @"
-                SELECT 
-                    M.MemberID,
-                    M.FullName,
-                    M.Gender,
-                    M.BirthDate,
-                    M.Phone,
-                    M.Email,
-                    M.Address,
-                    M.JoinDate,
-                    ISNULL(P.PlanName, N'Chưa đăng ký') AS MembershipPlan
-                FROM Member M
-                LEFT JOIN MembershipPlan P ON M.PlanID = P.PlanID";
+                    SELECT 
+                        M.MemberID,
+                        M.FullName,
+                        M.Gender,
+                        M.BirthDate,
+                        M.Phone,
+                        M.Email,
+                        M.Address,
+                        M.JoinDate,
+                        ISNULL(P.PlanName, N'Chưa đăng ký') AS MembershipPlan
+                    FROM Member M
+                    LEFT JOIN MembershipPlan P ON M.PlanID = P.PlanID";
 
                     // Nếu có từ khóa thì thêm điều kiện tìm kiếm
                     if (!string.IsNullOrWhiteSpace(keyword))
@@ -122,7 +121,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                                 MessageBoxIcon.Error);
             }
         }
-
 
         private void button1_Click_1(object sender, EventArgs e)
         {

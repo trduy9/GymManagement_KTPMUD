@@ -81,7 +81,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             cbGender.Items.Add("Other");
         }
 
-
         private void LoadMembershipPlans()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -99,7 +98,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 cbMembership.ValueMember = "PlanID";     // Lưu PlanID
             }
         }
-
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -146,7 +144,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 this.Close();
             }
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {

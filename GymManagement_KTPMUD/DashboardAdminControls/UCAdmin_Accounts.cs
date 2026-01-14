@@ -22,7 +22,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
 
         }
 
-        // ================== LOAD ROLE FILTER ==================
+        // LOAD ROLE FILTER 
         void InitRoleFilter()
         {
             comboBox1.Items.Add("All");
@@ -48,7 +48,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
         }
 
 
-        // ================== LOAD ACCOUNTS ==================
+        // LOAD ACCOUNTS
         void LoadAccounts()
         {
             try
@@ -99,49 +99,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
         {
             LoadAccounts();
         }
-
-
-
-
-        // ================== GRID STYLE ==================
-        void StyleGrid()
-        {
-            dgvAccounts.ReadOnly = true;
-            dgvAccounts.AllowUserToAddRows = false;
-            dgvAccounts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvAccounts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvAccounts.RowTemplate.Height = 40;
-
-            dgvAccounts.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-            dgvAccounts.DefaultCellStyle.Font = new Font("Segoe UI", 9);
-
-            if (dgvAccounts.Columns["UserID"] != null)
-                dgvAccounts.Columns["UserID"].Visible = false;
-
-            //dgvAccounts.CellFormatting += dgvAccounts_CellFormatting;
-        }
-
-        // ================== STATUS COLOR ==================
-        //private void dgvAccounts_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        //{
-        //    if (dgvAccounts.Columns[e.ColumnIndex].Name == "Status")
-        //    {
-        //        string status = e.Value.ToString();
-
-        //        if (status == "Active")
-        //        {
-        //            e.CellStyle.BackColor = Color.FromArgb(34, 197, 94);
-        //            e.CellStyle.ForeColor = Color.White;
-        //        }
-        //        else
-        //        {
-        //            e.CellStyle.BackColor = Color.FromArgb(239, 68, 68);
-        //            e.CellStyle.ForeColor = Color.White;
-        //        }
-
-        //        e.CellStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
-        //    }
-        //}
     }
 
 }

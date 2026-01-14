@@ -46,9 +46,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                     cbTrainerID.DisplayMember = "TrainerID";
                 }
             }
-
-          
-             
         }
 
         private void LoadClassInfo()
@@ -110,12 +107,12 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 conn.Open();
 
                 string query = @"
-            UPDATE Class
-            SET 
-                ClassName = @ClassName,
-                Schedule = @Schedule,
-                TrainerID = @TrainerID
-            WHERE ClassID = @ID";
+                UPDATE Class
+                SET 
+                    ClassName = @ClassName,
+                    Schedule = @Schedule,
+                    TrainerID = @TrainerID
+                WHERE ClassID = @ID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -140,9 +137,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
                 }
             }
         }
-
-
-
 
         private void label1_Click(object sender, EventArgs e)
         {

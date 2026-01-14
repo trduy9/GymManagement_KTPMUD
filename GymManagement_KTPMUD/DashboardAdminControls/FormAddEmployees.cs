@@ -37,9 +37,6 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             comboBox_employee_gender.SelectedIndex = -1;
         }
 
-        // Load chuyên môn (Specialty) từ bảng Specialty
-        
-
         private void label9_Click(object sender, EventArgs e)
         {
 
@@ -103,7 +100,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
 
                         if (result > 0)
                         {
-                            MessageBox.Show("✅ Trainer added successfully!",
+                            MessageBox.Show("Trainer added successfully!",
                                             "Success",
                                             MessageBoxButtons.OK,
                                             MessageBoxIcon.Information);
@@ -121,7 +118,7 @@ namespace GymManagement_KTPMUD.DashboardAdminControls
             }
             catch (Exception ex)
             {
-                MessageBox.Show("🚨 Error while adding trainer: " + ex.Message,
+                MessageBox.Show("Error while adding trainer: " + ex.Message,
                                 "System Error",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
